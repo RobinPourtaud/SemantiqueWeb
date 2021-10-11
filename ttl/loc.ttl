@@ -1,0 +1,432 @@
+@prefix rdf: <http://w3c.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix : <https://dolr.es/loc/> .
+
+
+:59 rdf:type schema:AdministrativeArea .
+:59 schema:name "Nord" .
+:59 schema:address "59" .
+
+:33 rdf:type schema:AdministrativeArea .
+:33 schema:name "Gironde" .
+:33 schema:address "33" .
+
+:69 rdf:type schema:AdministrativeArea .
+:69 schema:name "Rhône" .
+:69 schema:address "69" .
+
+:1 rdf:type schema:AdministrativeArea .
+:1 schema:name "Ain" .
+:1 schema:address "1" .
+
+:75 rdf:type schema:AdministrativeArea .
+:75 schema:name "Paris" .
+:75 schema:address "75" .
+
+:13 rdf:type schema:AdministrativeArea .
+:13 schema:name "Bouches-du-Rhône" .
+:13 schema:address "13" .
+
+:62 rdf:type schema:AdministrativeArea .
+:62 schema:name "Pas-de-Calais" .
+:62 schema:address "62" .
+
+:60 rdf:type schema:AdministrativeArea .
+:60 schema:name "Oise" .
+:60 schema:address "60" .
+
+:24 rdf:type schema:AdministrativeArea .
+:24 schema:name "Dordogne" .
+:24 schema:address "24" .
+
+:95 rdf:type schema:AdministrativeArea .
+:95 schema:name "Val-d'oise" .
+:95 schema:address "95" .
+
+:94 rdf:type schema:AdministrativeArea .
+:94 schema:name "Val-de-Marne" .
+:94 schema:address "94" .
+
+:57 rdf:type schema:AdministrativeArea .
+:57 schema:name "Moselle" .
+:57 schema:address "57" .
+
+:61 rdf:type schema:AdministrativeArea .
+:61 schema:name "Orne" .
+:61 schema:address "61" .
+
+:21 rdf:type schema:AdministrativeArea .
+:21 schema:name "Côte-d'or" .
+:21 schema:address "21" .
+
+:2 rdf:type schema:AdministrativeArea .
+:2 schema:name "Aisne" .
+:2 schema:address "2" .
+
+:37 rdf:type schema:AdministrativeArea .
+:37 schema:name "Indre-et-Loire" .
+:37 schema:address "37" .
+
+:38 rdf:type schema:AdministrativeArea .
+:38 schema:name "Isère" .
+:38 schema:address "38" .
+
+:92 rdf:type schema:AdministrativeArea .
+:92 schema:name "Hauts-de-Seine" .
+:92 schema:address "92" .
+
+:31 rdf:type schema:AdministrativeArea .
+:31 schema:name "Haute-Garonne" .
+:31 schema:address "31" .
+
+:73 rdf:type schema:AdministrativeArea .
+:73 schema:name "Savoie" .
+:73 schema:address "73" .
+
+:55 rdf:type schema:AdministrativeArea .
+:55 schema:name "Meuse" .
+:55 schema:address "55" .
+
+:91 rdf:type schema:AdministrativeArea .
+:91 schema:name "Essonne" .
+:91 schema:address "91" .
+
+:77 rdf:type schema:AdministrativeArea .
+:77 schema:name "Seine-et-Marne" .
+:77 schema:address "77" .
+
+:40 rdf:type schema:AdministrativeArea .
+:40 schema:name "Landes" .
+:40 schema:address "40" .
+
+:30 rdf:type schema:AdministrativeArea .
+:30 schema:name "Gard" .
+:30 schema:address "30" .
+
+:14 rdf:type schema:AdministrativeArea .
+:14 schema:name "Calvados" .
+:14 schema:address "14" .
+
+:19 rdf:type schema:AdministrativeArea .
+:19 schema:name "Corrèze" .
+:19 schema:address "19" .
+
+:11 rdf:type schema:AdministrativeArea .
+:11 schema:name "Aude" .
+:11 schema:address "11" .
+
+:84 rdf:type schema:AdministrativeArea .
+:84 schema:name "Vaucluse" .
+:84 schema:address "84" .
+
+:51 rdf:type schema:AdministrativeArea .
+:51 schema:name "Marne" .
+:51 schema:address "51" .
+
+:54 rdf:type schema:AdministrativeArea .
+:54 schema:name "Meurthe-et-Moselle" .
+:54 schema:address "54" .
+
+:6 rdf:type schema:AdministrativeArea .
+:6 schema:name "Alpes-Maritimes" .
+:6 schema:address "6" .
+
+:44 rdf:type schema:AdministrativeArea .
+:44 schema:name "Loire-Atlantique" .
+:44 schema:address "44" .
+
+:76 rdf:type schema:AdministrativeArea .
+:76 schema:name "Seine-Maritime" .
+:76 schema:address "76" .
+
+:63 rdf:type schema:AdministrativeArea .
+:63 schema:name "Puy-de-Dôme" .
+:63 schema:address "63" .
+
+:67 rdf:type schema:AdministrativeArea .
+:67 schema:name "Bas-Rhin" .
+:67 schema:address "67" .
+
+:65 rdf:type schema:AdministrativeArea .
+:65 schema:name "Hautes-Pyrénées" .
+:65 schema:address "65" .
+
+:36 rdf:type schema:AdministrativeArea .
+:36 schema:name "Indre" .
+:36 schema:address "36" .
+
+:78 rdf:type schema:AdministrativeArea .
+:78 schema:name "Yvelines" .
+:78 schema:address "78" .
+
+:88 rdf:type schema:AdministrativeArea .
+:88 schema:name "Vosges" .
+:88 schema:address "88" .
+
+:987 rdf:type schema:AdministrativeArea .
+:987 schema:name "Polynésie française" .
+:987 schema:address "987" .
+
+:988 rdf:type schema:AdministrativeArea .
+:988 schema:name "Nouvelle-Calédonie" .
+:988 schema:address "988" .
+
+:18 rdf:type schema:AdministrativeArea .
+:18 schema:name "Cher" .
+:18 schema:address "18" .
+
+:50 rdf:type schema:AdministrativeArea .
+:50 schema:name "Manche" .
+:50 schema:address "50" .
+
+:22 rdf:type schema:AdministrativeArea .
+:22 schema:name "Côtes-d'armor" .
+:22 schema:address "22" .
+
+:80 rdf:type schema:AdministrativeArea .
+:80 schema:name "Somme" .
+:80 schema:address "80" .
+
+:72 rdf:type schema:AdministrativeArea .
+:72 schema:name "Sarthe" .
+:72 schema:address "72" .
+
+:83 rdf:type schema:AdministrativeArea .
+:83 schema:name "Var" .
+:83 schema:address "83" .
+
+:12 rdf:type schema:AdministrativeArea .
+:12 schema:name "Aveyron" .
+:12 schema:address "12" .
+
+:58 rdf:type schema:AdministrativeArea .
+:58 schema:name "Nièvre" .
+:58 schema:address "58" .
+
+:56 rdf:type schema:AdministrativeArea .
+:56 schema:name "Morbihan" .
+:56 schema:address "56" .
+
+:64 rdf:type schema:AdministrativeArea .
+:64 schema:name "Pyrénées-Atlantiques" .
+:64 schema:address "64" .
+
+:975 rdf:type schema:AdministrativeArea .
+:975 schema:name "Saint-Pierre-et-Miquelon" .
+:975 schema:address "975" .
+
+:85 rdf:type schema:AdministrativeArea .
+:85 schema:name "Vendée" .
+:85 schema:address "85" .
+
+:93 rdf:type schema:AdministrativeArea .
+:93 schema:name "Seine-Saint-Denis" .
+:93 schema:address "93" .
+
+:25 rdf:type schema:AdministrativeArea .
+:25 schema:name "Doubs" .
+:25 schema:address "25" .
+
+:28 rdf:type schema:AdministrativeArea .
+:28 schema:name "Eure-et-Loir" .
+:28 schema:address "28" .
+
+:53 rdf:type schema:AdministrativeArea .
+:53 schema:name "Mayenne" .
+:53 schema:address "53" .
+
+:70 rdf:type schema:AdministrativeArea .
+:70 schema:name "Haute-Saône" .
+:70 schema:address "70" .
+
+:26 rdf:type schema:AdministrativeArea .
+:26 schema:name "Drôme" .
+:26 schema:address "26" .
+
+:49 rdf:type schema:AdministrativeArea .
+:49 schema:name "Maine-et-Loire" .
+:49 schema:address "49" .
+
+:16 rdf:type schema:AdministrativeArea .
+:16 schema:name "Charente" .
+:16 schema:address "16" .
+
+:46 rdf:type schema:AdministrativeArea .
+:46 schema:name "Lot" .
+:46 schema:address "46" .
+
+:29 rdf:type schema:AdministrativeArea .
+:29 schema:name "Finistère" .
+:29 schema:address "29" .
+
+:17 rdf:type schema:AdministrativeArea .
+:17 schema:name "Charente-Maritime" .
+:17 schema:address "17" .
+
+:86 rdf:type schema:AdministrativeArea .
+:86 schema:name "Vienne" .
+:86 schema:address "86" .
+
+:41 rdf:type schema:AdministrativeArea .
+:41 schema:name "Loir-et-Cher" .
+:41 schema:address "41" .
+
+:34 rdf:type schema:AdministrativeArea .
+:34 schema:name "Hérault" .
+:34 schema:address "34" .
+
+:27 rdf:type schema:AdministrativeArea .
+:27 schema:name "Eure" .
+:27 schema:address "27" .
+
+:35 rdf:type schema:AdministrativeArea .
+:35 schema:name "Ille-et-Vilaine" .
+:35 schema:address "35" .
+
+:99 rdf:type schema:AdministrativeArea .
+:99 schema:name "Français établis hors de France" .
+:99 schema:address "99" .
+
+:972 rdf:type schema:AdministrativeArea .
+:972 schema:name "Martinique" .
+:972 schema:address "972" .
+
+:15 rdf:type schema:AdministrativeArea .
+:15 schema:name "Cantal" .
+:15 schema:address "15" .
+
+:5 rdf:type schema:AdministrativeArea .
+:5 schema:name "Hautes-Alpes" .
+:5 schema:address "5" .
+
+:10 rdf:type schema:AdministrativeArea .
+:10 schema:name "Aube" .
+:10 schema:address "10" .
+
+:71 rdf:type schema:AdministrativeArea .
+:71 schema:name "Saône-et-Loire" .
+:71 schema:address "71" .
+
+:68 rdf:type schema:AdministrativeArea .
+:68 schema:name "Haut-Rhin" .
+:68 schema:address "68" .
+
+:79 rdf:type schema:AdministrativeArea .
+:79 schema:name "Deux-Sèvres" .
+:79 schema:address "79" .
+
+:9 rdf:type schema:AdministrativeArea .
+:9 schema:name "Ariège" .
+:9 schema:address "9" .
+
+:42 rdf:type schema:AdministrativeArea .
+:42 schema:name "Loire" .
+:42 schema:address "42" .
+
+:74 rdf:type schema:AdministrativeArea .
+:74 schema:name "Haute-Savoie" .
+:74 schema:address "74" .
+
+:39 rdf:type schema:AdministrativeArea .
+:39 schema:name "Jura" .
+:39 schema:address "39" .
+
+:3 rdf:type schema:AdministrativeArea .
+:3 schema:name "Allier" .
+:3 schema:address "3" .
+
+:87 rdf:type schema:AdministrativeArea .
+:87 schema:name "Haute-Vienne" .
+:87 schema:address "87" .
+
+:43 rdf:type schema:AdministrativeArea .
+:43 schema:name "Haute-Loire" .
+:43 schema:address "43" .
+
+:81 rdf:type schema:AdministrativeArea .
+:81 schema:name "Tarn" .
+:81 schema:address "81" .
+
+:48 rdf:type schema:AdministrativeArea .
+:48 schema:name "Lozère" .
+:48 schema:address "48" .
+
+:974 rdf:type schema:AdministrativeArea .
+:974 schema:name "Réunion" .
+:974 schema:address "974" .
+
+:47 rdf:type schema:AdministrativeArea .
+:47 schema:name "Lot-et-Garonne" .
+:47 schema:address "47" .
+
+:32 rdf:type schema:AdministrativeArea .
+:32 schema:name "Gers" .
+:32 schema:address "32" .
+
+:52 rdf:type schema:AdministrativeArea .
+:52 schema:name "Haute-Marne" .
+:52 schema:address "52" .
+
+:66 rdf:type schema:AdministrativeArea .
+:66 schema:name "Pyrénées-Orientales" .
+:66 schema:address "66" .
+
+:4 rdf:type schema:AdministrativeArea .
+:4 schema:name "Alpes-de-Haute-Provence" .
+:4 schema:address "4" .
+
+:7 rdf:type schema:AdministrativeArea .
+:7 schema:name "Ardèche" .
+:7 schema:address "7" .
+
+:8 rdf:type schema:AdministrativeArea .
+:8 schema:name "Ardennes" .
+:8 schema:address "8" .
+
+:45 rdf:type schema:AdministrativeArea .
+:45 schema:name "Loiret" .
+:45 schema:address "45" .
+
+:90 rdf:type schema:AdministrativeArea .
+:90 schema:name "Territoire de Belfort" .
+:90 schema:address "90" .
+
+:2b rdf:type schema:AdministrativeArea .
+:2b schema:name "Haute-corse" .
+:2b schema:address "2b" .
+
+:82 rdf:type schema:AdministrativeArea .
+:82 schema:name "Tarn-et-Garonne" .
+:82 schema:address "82" .
+
+:89 rdf:type schema:AdministrativeArea .
+:89 schema:name "Yonne" .
+:89 schema:address "89" .
+
+:2a rdf:type schema:AdministrativeArea .
+:2a schema:name "Corse-du-sud" .
+:2a schema:address "2a" .
+
+:976 rdf:type schema:AdministrativeArea .
+:976 schema:name "Mayotte" .
+:976 schema:address "976" .
+
+:973 rdf:type schema:AdministrativeArea .
+:973 schema:name "Guyane" .
+:973 schema:address "973" .
+
+:971 rdf:type schema:AdministrativeArea .
+:971 schema:name "Guadeloupe" .
+:971 schema:address "971" .
+
+:23 rdf:type schema:AdministrativeArea .
+:23 schema:name "Creuse" .
+:23 schema:address "23" .
+
+:986 rdf:type schema:AdministrativeArea .
+:986 schema:name "Wallis-et-Futuna" .
+:986 schema:address "986" .
+
+:977 rdf:type schema:AdministrativeArea .
+:977 schema:name "Saint-Barthélemy et Saint-Martin" .
+:977 schema:address "977" .

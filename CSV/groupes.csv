@@ -1,0 +1,25 @@
+id,nom,abreviation,anneeCreation,anneeDissolution,url,bordPolitique,valeurs
+P001,Les Républicains,LR,2015,-,https://republicains.fr/,droite,gaullisme;libéralisme;conservateur;democratie-chretienne
+P002,Socialistes et apparentés,SOC,2018,-,https://deputes.lessocialistes.fr/,gauche,socialisme;democratie
+P003,Socialiste,SOC,1958,2007,https://deputes.lessocialistes.fr/,gauche,socialisme;democratie
+P004,Union pour un Mouvement Populaire,UMP,2002,2015,-,droite,gaullisme;libéralisme;conservateur;democratie-chretienne
+P005,"Socialiste, écologiste et républicain",SER,2016,2017,https://deputes.lessocialistes.fr/,gauche,socialisme;ecologie;democratie
+P006,"Socialiste, radical, citoyen et divers gauche",S.R.C.,2007,2012,https://deputes.lessocialistes.fr/,gauche,socialisme;democratie
+P007,Députés n'appartenant à aucun groupe,DEM,1958,-,-,-,-
+P008,Gauche démocrate et républicaine,GDR,2007,-,http://groupe-communiste.assemblee-nationale.fr/,extreme-gauche,communisme;antiliberalisme
+P009,Non inscrit,NI,1958,-,-,-,-
+P010,"Socialiste, républicain et citoyen",SRC,2012,2016,https://deputes.lessocialistes.fr/,gauche,socialisme;democratie
+P011,Mouvement Démocrate (MoDem) et Démocrates apparentés,MODEM,2007,-,https://www.mouvementdemocrate.fr/,centre,social-liberalisme;humanisme;démocratie-chretienne;fédéralisme-européen
+P012,Union des démocrates et indépendants,UDI,2012,-,https://www.parti-udi.fr/,centre,social-liberalisme;démocratie-chretienne;fédéralisme-européen
+P013,Député-e-s Communistes et Républicains,CR,2002,2007,http://groupe-communiste.assemblee-nationale.fr/,extreme-gauche,communisme;antiliberalisme
+P014,Nouveau Centre,NC,2007,2012,https://www.les-centristes.fr/,centre,social-liberalisme;démocratie-chretienne;fédéralisme-européen
+P015,Libertés et Territoires,LT,2018,-,-,centre,-
+P016,"UDI, Agir et Indépendants",UDI-AGIR,2012,-,-,centre-droite,social-liberalisme;humanisme;démocratie-chretienne;fédéralisme-européen
+P017,La France insoumise,FI,2017,-,https://lafranceinsoumise.fr/,gauche,écologisme;populisme;souverainisme;altermondialisme;antiliberalisme;socialisme;écosocialisme
+P018,Union pour la Démocratie Française,UDF,1978,2007,http://www.udf.org/,centre	social-liberalisme;humanisme;démocratie-chretienne;fédéralisme-européen,
+P019,La République en Marche,LAREM,2016,-,https://en-marche.fr/,centre,social-liberalisme;transformisme;fédéralisme-européen;réformisme
+P020,UDI et Indépendants,UDI,2012,-,https://www.parti-udi.fr/,centre,social-liberalisme;démocratie-chretienne;fédéralisme-européen
+P021,Agir ensemble,AGIR-E,2020,-,-,centre-droite,social-liberalisme;républicanisme;fédéralisme-européen
+P022,"Radical, républicain, démocrate et progressiste",RRDP,2012,2017,http://www.rrdp-deputes.com/,extreme-gauche,radicalisme;solidarisme;progressisme;républicanisme
+P023,Nouvelle Gauche,NG,2017,2018,https://deputes.lessocialistes.fr/,gauche,socialisme;democratie
+P024,Mouvement Démocrate et apparentés,MODEM,2007,-,https://www.mouvementdemocrate.fr/,centre,social-liberalisme;humanisme;démocratie-chretienne;fédéralisme-européen
