@@ -1,8 +1,8 @@
 
 @prefix schema:  <https://schema.org/> .
-@prefix dbo:  https://dbpedia.org/ontology/ .
-@prefix rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns# .
-@prefix administrativeArea:  https://fuseki.dolr.es/AdministrativeArea/ .
+@prefix dbo:  <https://dbpedia.org/ontology/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :  <https://fuseki.dolr.es/administrativeArea/> .
 
 :33-4 rdf:type schema:AdministrativeArea .
 :33-4 schema:name "GIRONDE-4" .
