@@ -1,0 +1,294 @@
+@prefix schema:  <https://schema.org/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix organization:  <https://fuseki.dolr.es/organization/> .
+
+organization:les-republicains
+        rdf:type              schema:Organization ;
+        schema:identifier     "P001" ;
+        schema:name           "Les Républicains"@fr ;
+        schema:alternateName  "LR"@fr ;
+        schema:foundingDate   "2015"^^xsd:gYear ;
+        schema:url            "https://republicains.fr/" .
+
+organization:socialistes-et-apparentes
+        rdf:type              schema:Organization ;
+        schema:identifier     "P002" ;
+        schema:name           "Socialistes et apparentés"@fr ;
+        schema:alternateName  "SOC"@fr ;
+        schema:foundingDate   "2018"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:socialiste
+        rdf:type              schema:Organization ;
+        schema:identifier     "P003" ;
+        schema:name           "Socialiste"@fr ;
+        schema:alternateName  "SOC"@fr ;
+        schema:foundingDate   "1958"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:union-pour-un-mouvement-populaire
+        rdf:type              schema:Organization ;
+        schema:identifier     "P004" ;
+        schema:name           "Union pour un Mouvement Populaire"@fr ;
+        schema:alternateName  "UMP"@fr ;
+        schema:foundingDate   "2002"^^xsd:gYear .
+
+organization:socialiste-ecologiste-et-republicain
+        rdf:type              schema:Organization ;
+        schema:identifier     "P005" ;
+        schema:name           "Socialiste, écologiste et républicain"@fr ;
+        schema:alternateName  "SER"@fr ;
+        schema:foundingDate   "2016"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:socialiste-radical-citoyen-et-divers-gauche
+        rdf:type              schema:Organization ;
+        schema:identifier     "P006" ;
+        schema:name           "Socialiste, radical, citoyen et divers gauche"@fr ;
+        schema:alternateName  "S.R.C."@fr ;
+        schema:foundingDate   "2007"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:deputes-nappartenant-a-aucun-groupe
+        rdf:type              schema:Organization ;
+        schema:identifier     "P007" ;
+        schema:name           "Députés n'appartenant à aucun groupe"@fr ;
+        schema:alternateName  "DEM"@fr ;
+        schema:foundingDate   "1958"^^xsd:gYear .
+
+organization:gauche-democrate-et-republicaine
+        rdf:type              schema:Organization ;
+        schema:identifier     "P008" ;
+        schema:name           "Gauche démocrate et républicaine"@fr ;
+        schema:alternateName  "GDR"@fr ;
+        schema:foundingDate   "2007"^^xsd:gYear ;
+        schema:url            "http://groupe-communiste.assemblee-nationale.fr/" .
+
+organization:non-inscrit
+        rdf:type              schema:Organization ;
+        schema:identifier     "P009" ;
+        schema:name           "Non inscrit"@fr ;
+        schema:alternateName  "NI"@fr ;
+        schema:foundingDate   "1958"^^xsd:gYear .
+
+organization:socialiste-republicain-et-citoyen
+        rdf:type              schema:Organization ;
+        schema:identifier     "P010" ;
+        schema:name           "Socialiste, républicain et citoyen"@fr ;
+        schema:alternateName  "SRC"@fr ;
+        schema:foundingDate   "2012"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:mouvement-democrate-modem-et-democrates-apparentes
+        rdf:type              schema:Organization ;
+        schema:identifier     "P011" ;
+        schema:name           "Mouvement Démocrate (MoDem) et Démocrates apparentés"@fr ;
+        schema:alternateName  "MODEM"@fr ;
+        schema:foundingDate   "2007"^^xsd:gYear ;
+        schema:url            "https://www.mouvementdemocrate.fr/" .
+
+organization:union-des-democrates-et-independants
+        rdf:type              schema:Organization ;
+        schema:identifier     "P012" ;
+        schema:name           "Union des démocrates et indépendants"@fr ;
+        schema:alternateName  "UDI"@fr ;
+        schema:foundingDate   "2012"^^xsd:gYear ;
+        schema:url            "https://www.parti-udi.fr/" .
+
+organization:depute-e-s-communistes-et-republicains
+        rdf:type              schema:Organization ;
+        schema:identifier     "P013" ;
+        schema:name           "Député-e-s Communistes et Républicains"@fr ;
+        schema:alternateName  "CR"@fr ;
+        schema:foundingDate   "2002"^^xsd:gYear ;
+        schema:url            "http://groupe-communiste.assemblee-nationale.fr/" .
+
+organization:nouveau-centre
+        rdf:type              schema:Organization ;
+        schema:identifier     "P014" ;
+        schema:name           "Nouveau Centre"@fr ;
+        schema:alternateName  "NC"@fr ;
+        schema:foundingDate   "2007"^^xsd:gYear ;
+        schema:url            "https://www.les-centristes.fr/" .
+
+organization:libertes-et-territoires
+        rdf:type              schema:Organization ;
+        schema:identifier     "P015" ;
+        schema:name           "Libertés et Territoires"@fr ;
+        schema:alternateName  "LT"@fr ;
+        schema:foundingDate   "2018"^^xsd:gYear .
+
+organization:udi-agir-et-independants
+        rdf:type              schema:Organization ;
+        schema:identifier     "P016" ;
+        schema:name           "UDI, Agir et Indépendants"@fr ;
+        schema:alternateName  "UDI-AGIR"@fr ;
+        schema:foundingDate   "2012"^^xsd:gYear .
+
+organization:la-france-insoumise
+        rdf:type              schema:Organization ;
+        schema:identifier     "P017" ;
+        schema:name           "La France insoumise"@fr ;
+        schema:alternateName  "FI"@fr ;
+        schema:foundingDate   "2017"^^xsd:gYear ;
+        schema:url            "https://lafranceinsoumise.fr/" .
+
+organization:union-pour-la-democratie-francaise
+        rdf:type              schema:Organization ;
+        schema:identifier     "P018" ;
+        schema:name           "Union pour la Démocratie Française"@fr ;
+        schema:alternateName  "UDF"@fr ;
+        schema:foundingDate   "1978"^^xsd:gYear ;
+        schema:url            "http://www.udf.org/" .
+
+organization:la-republique-en-marche
+        rdf:type              schema:Organization ;
+        schema:identifier     "P019" ;
+        schema:name           "La République en Marche"@fr ;
+        schema:alternateName  "LAREM"@fr ;
+        schema:foundingDate   "2016"^^xsd:gYear ;
+        schema:url            "https://en-marche.fr/" .
+
+organization:udi-et-independants
+        rdf:type              schema:Organization ;
+        schema:identifier     "P020" ;
+        schema:name           "UDI et Indépendants"@fr ;
+        schema:alternateName  "UDI"@fr ;
+        schema:foundingDate   "2012"^^xsd:gYear ;
+        schema:url            "https://www.parti-udi.fr/" .
+
+organization:agir-ensemble
+        rdf:type              schema:Organization ;
+        schema:identifier     "P021" ;
+        schema:name           "Agir ensemble"@fr ;
+        schema:alternateName  "AGIR-E"@fr ;
+        schema:foundingDate   "2020"^^xsd:gYear .
+
+organization:radical-republicain-democrate-et-progressiste
+        rdf:type              schema:Organization ;
+        schema:identifier     "P022" ;
+        schema:name           "Radical, républicain, démocrate et progressiste"@fr ;
+        schema:alternateName  "RRDP"@fr ;
+        schema:foundingDate   "2012"^^xsd:gYear ;
+        schema:url            "http://www.rrdp-deputes.com/" .
+
+organization:nouvelle-gauche
+        rdf:type              schema:Organization ;
+        schema:identifier     "P023" ;
+        schema:name           "Nouvelle Gauche"@fr ;
+        schema:alternateName  "NG"@fr ;
+        schema:foundingDate   "2017"^^xsd:gYear ;
+        schema:url            "https://deputes.lessocialistes.fr/" .
+
+organization:mouvement-democrate-et-apparentes
+        rdf:type              schema:Organization ;
+        schema:identifier     "P024" ;
+        schema:name           "Mouvement Démocrate et apparentés"@fr ;
+        schema:alternateName  "MODEM"@fr ;
+        schema:foundingDate   "2007"^^xsd:gYear ;
+        schema:url            "https://www.mouvementdemocrate.fr/" .
+
+organization:les-republicains
+        schema:ethicsPolicy  "gaullisme"@fr ;
+        schema:ethicsPolicy  "libéralisme"@fr ;
+        schema:ethicsPolicy  "conservateur"@fr ;
+        schema:ethicsPolicy  "democratie-chretienne"@fr .
+
+organization:socialistes-et-apparentes
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:socialiste
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:union-pour-un-mouvement-populaire
+        schema:ethicsPolicy  "gaullisme"@fr ;
+        schema:ethicsPolicy  "libéralisme"@fr ;
+        schema:ethicsPolicy  "conservateur"@fr ;
+        schema:ethicsPolicy  "democratie-chretienne"@fr .
+
+organization:socialiste-ecologiste-et-republicain
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "ecologie"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:socialiste-radical-citoyen-et-divers-gauche
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:gauche-democrate-et-republicaine
+        schema:ethicsPolicy  "communisme"@fr ;
+        schema:ethicsPolicy  "antiliberalisme"@fr .
+
+organization:socialiste-republicain-et-citoyen
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:mouvement-democrate-modem-et-democrates-apparentes
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "humanisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:union-des-democrates-et-independants
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:depute-e-s-communistes-et-republicains
+        schema:ethicsPolicy  "communisme"@fr ;
+        schema:ethicsPolicy  "antiliberalisme"@fr .
+
+organization:nouveau-centre
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:udi-agir-et-independants
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "humanisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:la-france-insoumise
+        schema:ethicsPolicy  "écologisme"@fr ;
+        schema:ethicsPolicy  "populisme"@fr ;
+        schema:ethicsPolicy  "souverainisme"@fr ;
+        schema:ethicsPolicy  "altermondialisme"@fr ;
+        schema:ethicsPolicy  "antiliberalisme"@fr ;
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "écosocialisme"@fr .
+
+organization:la-republique-en-marche
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "transformisme"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr ;
+        schema:ethicsPolicy  "réformisme"@fr .
+
+organization:udi-et-independants
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:agir-ensemble
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "républicanisme"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
+
+organization:radical-republicain-democrate-et-progressiste
+        schema:ethicsPolicy  "radicalisme"@fr ;
+        schema:ethicsPolicy  "solidarisme"@fr ;
+        schema:ethicsPolicy  "progressisme"@fr ;
+        schema:ethicsPolicy  "républicanisme"@fr .
+
+organization:nouvelle-gauche
+        schema:ethicsPolicy  "socialisme"@fr ;
+        schema:ethicsPolicy  "democratie"@fr .
+
+organization:mouvement-democrate-et-apparentes
+        schema:ethicsPolicy  "social-liberalisme"@fr ;
+        schema:ethicsPolicy  "humanisme"@fr ;
+        schema:ethicsPolicy  "démocratie-chretienne"@fr ;
+        schema:ethicsPolicy  "fédéralisme-européen"@fr .
