@@ -1,0 +1,14 @@
+PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX administrativeRegion: <https://fuseki.dolr.es/administrativeRegion/>
+
+CONSTRUCT {
+  ?administrativeRegion a dbo:AdministrativeRegion;
+    dbo:department ?department;
+    dbo:postalCode ?postalCode;
+}
+FROM <file:loc.csv>
+WHERE {
+  BIND (URI(CONCAT('https://fuseki.dolr.es/administrativeRegion/', ?departementCode)) AS ?administrativeRegion)
+  BIND(STRLANG(?departementNom, "fr") AS ?department)
+  BIND(?departementCode AS ?postalCode)
+}

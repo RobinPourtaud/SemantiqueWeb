@@ -1,0 +1,83 @@
+PREFIX schema: <https://schema.org/>
+PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX administrativeArea: <https://fuseki.dolr.es/administrativeArea/>
+PREFIX organization: <https://fuseki.dolr.es/organization/>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+PREFIX : <https://fuseki.dolr.es/parliamentMember/>
+
+CONSTRUCT {
+  ?parliamentMember a custom:ParliamentMember;
+    schema:identifier ?identifier;
+    schema:gender ?gender;
+    schema:firstName ?firstName;
+    schema:givenName ?givenName;
+    schema:birthDate ?birthDate;
+    dbo:age ?ageInteger;
+    schema:jobTitle ?jobTitle;
+
+    schema:Organization ?organization;
+    
+    schema:AdministrativeArea ?administrativeArea;
+    dbo:constituencyDistrict ?constituencyDistrict;
+
+    custom:startingDate ?startingDate;
+    custom:mandatesNumber ?mandatesNumber;
+    custom:experienceYears ?experienceYears;
+    custom:participationScore ?participationScore;
+    custom:participationScoreSpeciality ?participationScoreSpeciality;
+    custom:loyaltyScore ?loyaltyScore;
+    custom:majorityScore ?majorityScore;
+    custom:isActive ?isActive;
+
+    schema:email ?email;
+    schema:url ?url_website;
+    schema:url ?url_twitter;
+    schema:url ?url_facebook;
+} 
+FROM <file:deputes.csv>
+WHERE {
+  BIND (URI(CONCAT('https://fuseki.dolr.es/parliamentMember/', ?id)) AS ?parliamentMember)
+  BIND(?id AS ?identifier)
+  OPTIONAL { FILTER (?civ = "M.")
+     BIND(STRLANG("masculin","fr") AS ?gender)
+  }
+  OPTIONAL { FILTER (?civ = "Mme")
+    BIND(STRLANG("féminin","fr") AS ?gender)
+  }
+  BIND(?prenom AS ?firstName)
+  BIND(?nom AS ?givenName)
+  BIND(xsd:date(?naissance) AS ?birthDate)
+  BIND(xsd:positiveInteger(?age) AS ?ageInteger)
+  BIND(STRLANG(?job, "fr") AS ?jobTitle)
+
+  BIND(REPLACE(?groupe,'é','e') AS ?groupe1)
+  BIND(REPLACE(?groupe1,'à','a') AS ?groupe2)
+  BIND(REPLACE(?groupe2,'ç','c') AS ?groupe3)
+  BIND(REPLACE(?groupe3,' ','-') AS ?groupe4)
+  BIND(REPLACE(?groupe4,',','') AS ?groupe5)
+  BIND(REPLACE(?groupe5,'\'','') AS ?groupe6)
+  BIND(REPLACE(?groupe6,'\\(','') AS ?groupe7)
+  BIND(REPLACE(?groupe7,'\\)','') AS ?groupe8)
+  BIND(LCASE(?groupe8) AS ?groupe9)
+  BIND (URI(CONCAT('https://fuseki.dolr.es/organization/', ?groupe9)) AS ?organization)
+
+  BIND(URI(CONCAT('https://fuseki.dolr.es/administrativeArea/', ?departementCode, '-', ?circo)) AS ?administrativeArea)
+  BIND(xsd:positiveInteger(?circo) as ?constituencyDistrict)
+
+  BIND(xsd:date(?datePriseFonction) AS ?startingDate)
+  BIND(xsd:positiveInteger(REPLACE(?experienceDepute,' ans','')) AS ?experienceYears)
+  BIND(xsd:positiveInteger(?nombreMandats) as ?mandatesNumber)
+  BIND(xsd:float(?scoreParticipation) as ?participationScore)
+  BIND(xsd:float(?scoreParticipationSpecialite) as ?participationScoreSpeciality)
+  BIND(xsd:float(?scoreLoyaute) as ?loyaltyScore)
+  BIND(xsd:float(?scoreMajorite) as ?majorityScore)
+  BIND(xsd:boolean(?active) as ?isActive)
+
+  BIND(?mail AS ?email)
+  BIND(?website AS ?url_website)
+  BIND(REPLACE(?twitter, '@', '') AS ?twitterUsername)
+  BIND(CONCAT('https://twitter.com/', ?twitterUsername) AS ?url_twitter)
+  BIND(CONCAT('https://facebook.com/', ?facebook) AS ?url_facebook)
+}

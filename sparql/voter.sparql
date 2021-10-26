@@ -1,0 +1,22 @@
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+PREFIX voter: <https://fuseki.dolr.es/voter/>
+PREFIX suffrage: <https://fuseki.dolr.es/suffrage/>
+
+CONSTRUCT {
+  ?voter a custom:Voter;
+    custom:suffrage ?suffrage;
+    custom:for ?for;
+    custom:against ?against;
+    custom:absent ?absent;
+    custom:abstention ?abstention;
+} 
+FROM <file:votes.csv>
+WHERE {
+  BIND (URI(CONCAT('https://fuseki.dolr.es/voter/', ?id)) AS ?voter)
+  BIND (URI(CONCAT('https://fuseki.dolr.es/suffrage/', ?code)) AS ?suffrage)
+  BIND(xsd:boolean(?pour) AS ?for)
+  BIND(xsd:boolean(?contre) AS ?against)
+  BIND(xsd:boolean(?non_votants) AS ?absent)
+  BIND(xsd:boolean(?abstentions) AS ?abstention)
+}

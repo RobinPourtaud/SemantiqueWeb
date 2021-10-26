@@ -1,0 +1,31 @@
+PREFIX schema: <http://schema.org>
+PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+PREFIX suffrage: <https://fuseki.dolr.es/suffrage/>
+
+CONSTRUCT {
+  ?suffrage a dbo:Suffrage;
+    schema:identifier ?code;
+    schema:date ?voteDate;
+    schema:title ?title;
+    custom:voters ?voters;
+    custom:required ?voteRequired;
+    custom:absent ?absent;
+    custom:for ?for;
+    custom:against ?against;
+    custom:abstention ?abstention;
+} 
+FROM <file:vote_description.csv>
+WHERE {
+  BIND (URI(CONCAT('https://fuseki.dolr.es/suffrage/', ?code)) AS ?suffrage)
+  BIND(?code AS ?identifier)
+  BIND(xsd:date(?date) AS ?voteDate)
+  BIND(STRLANG(?titre, 'fr') AS ?title)
+  BIND(xsd:positiveInteger(?nb_votants) AS ?voters)
+  BIND(xsd:positiveInteger(?requis) AS ?voteRequired)
+  BIND(xsd:positiveInteger(?non_votants) AS ?absent)
+  BIND(xsd:positiveInteger(?pour) AS ?for)
+  BIND(xsd:positiveInteger(?contre) AS ?against)
+  BIND(xsd:positiveInteger(?abstentions) AS ?abstention)
+}

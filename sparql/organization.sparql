@@ -1,0 +1,57 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX organization: <https://fuseki.dolr.es/organization/>
+
+CONSTRUCT {
+  ?organization a schema:Organization;
+    schema:identifier ?identifier;
+    schema:name ?name;
+    schema:alternateName ?alternateName;
+    schema:foundingDate ?foundingDate;
+    schema:url ?url_organization;
+    schema:ethicsPolicy ?ethicsPolicy1;
+
+} 
+FROM <file:groupes.csv>
+WHERE {
+  VALUES ?UNDEF {UNDEF}
+
+  BIND(?id AS ?identifier)
+  BIND(STRLANG(?nom, "fr") AS ?name)
+  BIND(STRLANG(?abreviation, "fr") AS ?alternateName)
+  BIND(xsd:gYear(?anneeCreation) AS ?foundingDate)
+  BIND(IF(STRSTARTS(?url,"-"),?UNDEF,?url) as ?url_organization)
+
+  BIND(REPLACE(?nom,'é','e') AS ?nom1)
+  BIND(REPLACE(?nom1,'à','a') AS ?nom2)
+  BIND(REPLACE(?nom2,'ç','c') AS ?nom3)
+  BIND(REPLACE(?nom3,' ','-') AS ?nom4)
+  BIND(REPLACE(?nom4,',','') AS ?nom5)
+  BIND(REPLACE(?nom5,'\'','') AS ?nom6)
+  BIND(REPLACE(?nom6,'\\(','') AS ?nom7)
+  BIND(REPLACE(?nom7,'\\)','') AS ?nom8)
+  BIND(LCASE(?nom8) AS ?nom9)
+  BIND (URI(CONCAT('https://fuseki.dolr.es/organization/', ?nom9)) AS ?organization)
+
+  BIND(IF(STRSTARTS(?bordPolitique,"-"),?UNDEF,STRLANG(?bordPolitique,"fr")) AS ?ethicsPolicy1)
+}
+
+CONSTRUCT {
+  ?organization schema:ethicsPolicy ?ethicsPolicy2;
+} 
+FROM <file:groupes.csv>
+WHERE {
+  BIND(REPLACE(?nom,'é','e') AS ?nom1)
+  BIND(REPLACE(?nom1,'à','a') AS ?nom2)
+  BIND(REPLACE(?nom2,'ç','c') AS ?nom3)
+  BIND(REPLACE(?nom3,' ','-') AS ?nom4)
+  BIND(REPLACE(?nom4,',','') AS ?nom5)
+  BIND(REPLACE(?nom5,'\'','') AS ?nom6)
+  BIND(REPLACE(?nom6,'\\(','') AS ?nom7)
+  BIND(REPLACE(?nom7,'\\)','') AS ?nom8)
+  BIND(LCASE(?nom8) AS ?nom9)
+  BIND (URI(CONCAT('https://fuseki.dolr.es/organization/', ?nom9)) AS ?organization)
+
+  ?ethics apf:strSplit (?valeurs ';')
+  BIND(IF(STRSTARTS(?ethics,"-"),?UNDEF,STRLANG(?ethics,"fr")) AS ?ethicsPolicy2)
+}
