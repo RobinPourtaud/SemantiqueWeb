@@ -1,0 +1,1092 @@
+@prefix schema:  <http://schema.org> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix custom:  <https://fuseki.dolr.es/ontology/> .
+@prefix suffrage:  <https://fuseki.dolr.es/suffrage/> .
+
+suffrage:VTANR5L15V1  rdf:type  dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1" ;
+        schema:date        "2017-07-04"^^xsd:date ;
+        schema:title       "la declaration de politique generale du Gouvernement de M. Edouard Philippe (application de l'article 49, alinea premier, de la Constitution)."@fr ;
+        custom:voters      "566"^^xsd:positiveInteger ;
+        custom:required    "219"^^xsd:positiveInteger ;
+        custom:absent      "9"^^xsd:positiveInteger ;
+        custom:for         "370"^^xsd:positiveInteger ;
+        custom:against     "67"^^xsd:positiveInteger ;
+        custom:abstention  "129"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V10
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V10" ;
+        schema:date        "2017-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 446 de M. Vallaud à l'article premier du projet de loi d'habilitation à prendre par ordonnances les mesures pour le renforcement du dialogue social (première lecture)."@fr ;
+        custom:voters      "227"^^xsd:positiveInteger ;
+        custom:required    "114"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "26"^^xsd:positiveInteger ;
+        custom:against     "200"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V100
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V100" ;
+        schema:date        "2017-07-28"^^xsd:date ;
+        schema:title       "l'amendement n° 223 de M. Aviragnet à l'article 5 du projet de loi organique pour la confiance dans la vie publique (première lecture)."@fr ;
+        custom:voters      "139"^^xsd:positiveInteger ;
+        custom:required    "61"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "46"^^xsd:positiveInteger ;
+        custom:against     "74"^^xsd:positiveInteger ;
+        custom:abstention  "19"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1000
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1000" ;
+        schema:date        "2018-07-04"^^xsd:date ;
+        schema:title       "l'amendement n° 11 de M. Bernalicis à l'article unique de la proposition de loi renforçant la lutte contre les rodéos motorisés (première lecture)."@fr ;
+        custom:voters      "77"^^xsd:positiveInteger ;
+        custom:required    "37"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "2"^^xsd:positiveInteger ;
+        custom:against     "70"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1001
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1001" ;
+        schema:date        "2018-07-04"^^xsd:date ;
+        schema:title       "l'amendement n° 2 de M. Pauget à l'article unique de la proposition de loi renforçant la lutte contre les rodéos motorisés (première lecture)."@fr ;
+        custom:voters      "80"^^xsd:positiveInteger ;
+        custom:required    "41"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "19"^^xsd:positiveInteger ;
+        custom:against     "61"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1002
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1002" ;
+        schema:date        "2018-07-04"^^xsd:date ;
+        schema:title       "l'article unique de la proposition de loi renforçant la lutte contre les rodéos motorisés (première lecture)."@fr ;
+        custom:voters      "91"^^xsd:positiveInteger ;
+        custom:required    "46"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "90"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1003
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1003" ;
+        schema:date        "2018-07-04"^^xsd:date ;
+        schema:title       "l'ensemble de la proposition de loi renforçant la lutte contre les rodéos motorisés (première lecture)."@fr ;
+        custom:voters      "95"^^xsd:positiveInteger ;
+        custom:required    "48"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "94"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1004
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1004" ;
+        schema:date        "2018-07-05"^^xsd:date ;
+        schema:title       "la motion de rejet préalable déposée par M. André Chassaigne du projet de loi autorisant la ratification de l'accord de partenariat sur les relations et la coopération entre l'Union européenne et ses États membres d'une part, et la Nouvelle-Zélande, d'autre part (première lecture)."@fr ;
+        custom:voters      "53"^^xsd:positiveInteger ;
+        custom:required    "26"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "7"^^xsd:positiveInteger ;
+        custom:against     "44"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1005
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1005" ;
+        schema:date        "2018-07-05"^^xsd:date ;
+        schema:title       "l'article unique du projet de loi autorisant la ratification de l'accord de partenariat sur les relations et la coopération entre l'Union européenne et ses États membres d'une part, et la Nouvelle-Zélande, d'autre part (première lecture)."@fr ;
+        custom:voters      "42"^^xsd:positiveInteger ;
+        custom:required    "22"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "36"^^xsd:positiveInteger ;
+        custom:against     "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1006
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1006" ;
+        schema:date        "2018-07-05"^^xsd:date ;
+        schema:title       "l'article unique du projet de loi autorisant l'adhésion au protocole contre la fabrication et le trafic illicites d'armes à feu, de leurs pièces, éléments et munitions, additionnel à la convention des Nations unies contre la criminalité transnationale organisée, adoptés à New York le 31 mai 2001 (première lecture)."@fr ;
+        custom:voters      "41"^^xsd:positiveInteger ;
+        custom:required    "21"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "41"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1007
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1007" ;
+        schema:date        "2018-07-05"^^xsd:date ;
+        schema:title       "l'amendement n° 68 de Mme Battistel et les amendements identiques suivants à l'article premier de la proposition de loi relative à la mise en oeuvre du transfert de compétences eau et assainissement aux communautés de communes et aux communautés d'agglomération (nouvelle lecture)."@fr ;
+        custom:voters      "29"^^xsd:positiveInteger ;
+        custom:required    "15"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "10"^^xsd:positiveInteger ;
+        custom:against     "19"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1008
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1008" ;
+        schema:date        "2018-07-10"^^xsd:date ;
+        schema:title       "la motion de rejet préalable, déposée par M. Christian Jacob, du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "271"^^xsd:positiveInteger ;
+        custom:required    "133"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "91"^^xsd:positiveInteger ;
+        custom:against     "174"^^xsd:positiveInteger ;
+        custom:abstention  "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1009
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1009" ;
+        schema:date        "2018-07-10"^^xsd:date ;
+        schema:title       "la motion de renvoi en commission, deposee par M. Christian Jacob, du projet de loi constitutionnelle pour une democratie plus representative, responsable et efficace (premiere lecture)."@fr ;
+        custom:voters      "253"^^xsd:positiveInteger ;
+        custom:required    "127"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "96"^^xsd:positiveInteger ;
+        custom:against     "156"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V101
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V101" ;
+        schema:date        "2017-07-28"^^xsd:date ;
+        schema:title       "l'amendement n° 259 de Mme Untermaier et les amendements identiques suivants après l'article 8 ter du projet de loi organique pour la confiance dans la vie publique (première lecture)."@fr ;
+        custom:voters      "136"^^xsd:positiveInteger ;
+        custom:required    "62"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "19"^^xsd:positiveInteger ;
+        custom:against     "103"^^xsd:positiveInteger ;
+        custom:abstention  "14"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1010
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1010" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1246 de M. Mélenchon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "130"^^xsd:positiveInteger ;
+        custom:required    "65"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "17"^^xsd:positiveInteger ;
+        custom:against     "111"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1011
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1011" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1248 de M. Mélenchon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "143"^^xsd:positiveInteger ;
+        custom:required    "71"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "19"^^xsd:positiveInteger ;
+        custom:against     "121"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1012
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1012" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 907 de M. Pajot et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "196"^^xsd:positiveInteger ;
+        custom:required    "92"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "37"^^xsd:positiveInteger ;
+        custom:against     "145"^^xsd:positiveInteger ;
+        custom:abstention  "14"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1013
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1013" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1402 de Mme Untermaier et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "190"^^xsd:positiveInteger ;
+        custom:required    "89"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "45"^^xsd:positiveInteger ;
+        custom:against     "132"^^xsd:positiveInteger ;
+        custom:abstention  "13"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1014
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1014" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1110 de M. Lachaud avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "134"^^xsd:positiveInteger ;
+        custom:required    "60"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "31"^^xsd:positiveInteger ;
+        custom:against     "88"^^xsd:positiveInteger ;
+        custom:abstention  "15"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1015
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1015" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 2343 de M. Dharréville avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "133"^^xsd:positiveInteger ;
+        custom:required    "59"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "29"^^xsd:positiveInteger ;
+        custom:against     "87"^^xsd:positiveInteger ;
+        custom:abstention  "17"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1016
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1016" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1529 de M. Latombe avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "138"^^xsd:positiveInteger ;
+        custom:required    "63"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "35"^^xsd:positiveInteger ;
+        custom:against     "89"^^xsd:positiveInteger ;
+        custom:abstention  "14"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1017
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1017" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 2376 de M. Serville avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "127"^^xsd:positiveInteger ;
+        custom:required    "61"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "35"^^xsd:positiveInteger ;
+        custom:against     "85"^^xsd:positiveInteger ;
+        custom:abstention  "7"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1018
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1018" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1115 de M. Mélenchon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "130"^^xsd:positiveInteger ;
+        custom:required    "62"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "34"^^xsd:positiveInteger ;
+        custom:against     "88"^^xsd:positiveInteger ;
+        custom:abstention  "8"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1019
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1019" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1116 de M. Mélenchon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "121"^^xsd:positiveInteger ;
+        custom:required    "60"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "23"^^xsd:positiveInteger ;
+        custom:against     "95"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V102
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V102" ;
+        schema:date        "2017-07-28"^^xsd:date ;
+        schema:title       "l'amendement n° 377 de M. Philippe Vigier après l'article 19 du projet de loi organique pour la confiance dans la vie publique (première lecture)."@fr ;
+        custom:voters      "191"^^xsd:positiveInteger ;
+        custom:required    "90"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "54"^^xsd:positiveInteger ;
+        custom:against     "124"^^xsd:positiveInteger ;
+        custom:abstention  "13"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1020
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1020" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1209 de M. Lachaud avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "105"^^xsd:positiveInteger ;
+        custom:required    "51"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "20"^^xsd:positiveInteger ;
+        custom:against     "81"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1021
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1021" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 2344 de M. Jumel avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "103"^^xsd:positiveInteger ;
+        custom:required    "50"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "12"^^xsd:positiveInteger ;
+        custom:against     "86"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1022
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1022" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1837 de M. Lachaud avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "114"^^xsd:positiveInteger ;
+        custom:required    "57"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "11"^^xsd:positiveInteger ;
+        custom:against     "101"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1023
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1023" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1097 de Mme Obono avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "132"^^xsd:positiveInteger ;
+        custom:required    "66"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "21"^^xsd:positiveInteger ;
+        custom:against     "110"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1024
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1024" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 21 de M. Le Fur et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "146"^^xsd:positiveInteger ;
+        custom:required    "72"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "21"^^xsd:positiveInteger ;
+        custom:against     "121"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1025
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1025" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 260 de M. Viala et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "144"^^xsd:positiveInteger ;
+        custom:required    "70"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "16"^^xsd:positiveInteger ;
+        custom:against     "122"^^xsd:positiveInteger ;
+        custom:abstention  "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1026
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1026" ;
+        schema:date        "2018-07-11"^^xsd:date ;
+        schema:title       "l'amendement n° 1106 de M. Ratenon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "104"^^xsd:positiveInteger ;
+        custom:required    "53"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "18"^^xsd:positiveInteger ;
+        custom:against     "86"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1027
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1027" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 1404 de Mme Untermaier et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "74"^^xsd:positiveInteger ;
+        custom:required    "36"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "21"^^xsd:positiveInteger ;
+        custom:against     "50"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1028
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1028" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 2306 de M. Jumel et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "90"^^xsd:positiveInteger ;
+        custom:required    "43"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "17"^^xsd:positiveInteger ;
+        custom:against     "67"^^xsd:positiveInteger ;
+        custom:abstention  "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1029
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1029" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 2216 de M. Coquerel avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "88"^^xsd:positiveInteger ;
+        custom:required    "42"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "16"^^xsd:positiveInteger ;
+        custom:against     "67"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V103
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V103" ;
+        schema:date        "2017-07-28"^^xsd:date ;
+        schema:title       "l'ensemble du projet de loi pour la confiance dans la vie publique (première lecture)."@fr ;
+        custom:voters      "372"^^xsd:positiveInteger ;
+        custom:required    "162"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "319"^^xsd:positiveInteger ;
+        custom:against     "4"^^xsd:positiveInteger ;
+        custom:abstention  "49"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1030
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1030" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 1269 de M. Mélenchon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "89"^^xsd:positiveInteger ;
+        custom:required    "44"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "16"^^xsd:positiveInteger ;
+        custom:against     "70"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1031
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1031" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 2199 de Mme Obono avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "110"^^xsd:positiveInteger ;
+        custom:required    "52"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "13"^^xsd:positiveInteger ;
+        custom:against     "90"^^xsd:positiveInteger ;
+        custom:abstention  "7"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1032
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1032" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 199 de M. Lagarde avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "119"^^xsd:positiveInteger ;
+        custom:required    "60"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "119"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1033
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1033" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 2209 de Mme Autain et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "78"^^xsd:positiveInteger ;
+        custom:required    "38"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "21"^^xsd:positiveInteger ;
+        custom:against     "53"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1034
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1034" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 141 de M. Descoeur et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "62"^^xsd:positiveInteger ;
+        custom:required    "30"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "26"^^xsd:positiveInteger ;
+        custom:against     "33"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1035
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1035" ;
+        schema:date        "2018-07-12"^^xsd:date ;
+        schema:title       "l'amendement n° 2165 de M. Balanant et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "90"^^xsd:positiveInteger ;
+        custom:required    "46"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "66"^^xsd:positiveInteger ;
+        custom:against     "24"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1036
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1036" ;
+        schema:date        "2018-07-13"^^xsd:date ;
+        schema:title       "l'amendement n° 1812 de M. Potier et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "71"^^xsd:positiveInteger ;
+        custom:required    "34"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "17"^^xsd:positiveInteger ;
+        custom:against     "49"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1037
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1037" ;
+        schema:date        "2018-07-13"^^xsd:date ;
+        schema:title       "l'amendement n° 328 de la commission des lois et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "72"^^xsd:positiveInteger ;
+        custom:required    "35"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "65"^^xsd:positiveInteger ;
+        custom:against     "3"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1038
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1038" ;
+        schema:date        "2018-07-13"^^xsd:date ;
+        schema:title       "l'amendement n° 1412 de Mme Untermaier et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "41"^^xsd:positiveInteger ;
+        custom:required    "21"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "13"^^xsd:positiveInteger ;
+        custom:against     "28"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1039
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1039" ;
+        schema:date        "2018-07-13"^^xsd:date ;
+        schema:title       "l'amendement n° 1411 de Mme Untermaier et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "46"^^xsd:positiveInteger ;
+        custom:required    "23"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "15"^^xsd:positiveInteger ;
+        custom:against     "30"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V104
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V104" ;
+        schema:date        "2017-07-28"^^xsd:date ;
+        schema:title       "l'ensemble du projet de loi organique pour la confiance dans la vie publique (première lecture)."@fr ;
+        custom:voters      "372"^^xsd:positiveInteger ;
+        custom:required    "161"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "283"^^xsd:positiveInteger ;
+        custom:against     "37"^^xsd:positiveInteger ;
+        custom:abstention  "52"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1040
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1040" ;
+        schema:date        "2018-07-13"^^xsd:date ;
+        schema:title       "l'amendement n° 2231 de M. Jumel et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "55"^^xsd:positiveInteger ;
+        custom:required    "26"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "7"^^xsd:positiveInteger ;
+        custom:against     "43"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1041
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1041" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 1424 de Mme Untermaier avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "67"^^xsd:positiveInteger ;
+        custom:required    "34"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "23"^^xsd:positiveInteger ;
+        custom:against     "43"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1042
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1042" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 2236 de M. Chassaigne avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "58"^^xsd:positiveInteger ;
+        custom:required    "28"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "7"^^xsd:positiveInteger ;
+        custom:against     "47"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1043
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1043" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 1425 de Mme Untermaier avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "101"^^xsd:positiveInteger ;
+        custom:required    "50"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "33"^^xsd:positiveInteger ;
+        custom:against     "66"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1044
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1044" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 2247 de M. Jumel avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "101"^^xsd:positiveInteger ;
+        custom:required    "50"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "34"^^xsd:positiveInteger ;
+        custom:against     "65"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1045
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1045" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 1296 de Mme Faucillon avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "103"^^xsd:positiveInteger ;
+        custom:required    "50"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "33"^^xsd:positiveInteger ;
+        custom:against     "66"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1046
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1046" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 2238 de M. Chassaigne avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "104"^^xsd:positiveInteger ;
+        custom:required    "52"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "30"^^xsd:positiveInteger ;
+        custom:against     "72"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1047
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1047" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 369 de M. Masson et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "89"^^xsd:positiveInteger ;
+        custom:required    "44"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "29"^^xsd:positiveInteger ;
+        custom:against     "57"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1048
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1048" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 876 de M. El Guerrab et l'amendement identique suivant avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "76"^^xsd:positiveInteger ;
+        custom:required    "37"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "16"^^xsd:positiveInteger ;
+        custom:against     "57"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1049
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1049" ;
+        schema:date        "2018-07-16"^^xsd:date ;
+        schema:title       "l'amendement n° 221 de M. Lagarde et les amendements identiques suivants avant l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "60"^^xsd:positiveInteger ;
+        custom:required    "27"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "40"^^xsd:positiveInteger ;
+        custom:against     "13"^^xsd:positiveInteger ;
+        custom:abstention  "7"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V105
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V105" ;
+        schema:date        "2017-08-01"^^xsd:date ;
+        schema:title       "la motion de rejet préalable, déposée par M. Jean-Luc Mélenchon, du projet de loi d'habilitation à prendre par ordonnances les mesures pour le renforcement du dialogue social (texte de la commission mixte paritaire)."@fr ;
+        custom:voters      "302"^^xsd:positiveInteger ;
+        custom:required    "147"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "36"^^xsd:positiveInteger ;
+        custom:against     "256"^^xsd:positiveInteger ;
+        custom:abstention  "10"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1050
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1050" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 2066 de M. Marleix et l'amendement identique suivant à l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "121"^^xsd:positiveInteger ;
+        custom:required    "61"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "54"^^xsd:positiveInteger ;
+        custom:against     "66"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1051
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1051" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 752 de M. Hetzel après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "179"^^xsd:positiveInteger ;
+        custom:required    "89"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "64"^^xsd:positiveInteger ;
+        custom:against     "112"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1052
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1052" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 1431 de Mme Untermaier après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "180"^^xsd:positiveInteger ;
+        custom:required    "90"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "78"^^xsd:positiveInteger ;
+        custom:against     "100"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1053
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1053" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 2057 de M. Marleix après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "180"^^xsd:positiveInteger ;
+        custom:required    "91"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "77"^^xsd:positiveInteger ;
+        custom:against     "103"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1054
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1054" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 1134 de M. Coquerel et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "205"^^xsd:positiveInteger ;
+        custom:required    "101"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "77"^^xsd:positiveInteger ;
+        custom:against     "124"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1055
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1055" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 145 de M. Leclerc et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "202"^^xsd:positiveInteger ;
+        custom:required    "101"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "78"^^xsd:positiveInteger ;
+        custom:against     "123"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1056
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1056" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 146 de M. Leclerc et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "169"^^xsd:positiveInteger ;
+        custom:required    "84"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "65"^^xsd:positiveInteger ;
+        custom:against     "102"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1057
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1057" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 2 rectifié de M. Le Fur et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "189"^^xsd:positiveInteger ;
+        custom:required    "91"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "61"^^xsd:positiveInteger ;
+        custom:against     "120"^^xsd:positiveInteger ;
+        custom:abstention  "8"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1058
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1058" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 90 de M. Boucard et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "182"^^xsd:positiveInteger ;
+        custom:required    "88"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "60"^^xsd:positiveInteger ;
+        custom:against     "115"^^xsd:positiveInteger ;
+        custom:abstention  "7"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1059
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1059" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 726 de M. Gosselin après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "185"^^xsd:positiveInteger ;
+        custom:required    "89"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "60"^^xsd:positiveInteger ;
+        custom:against     "116"^^xsd:positiveInteger ;
+        custom:abstention  "9"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V106
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V106" ;
+        schema:date        "2017-08-01"^^xsd:date ;
+        schema:title       "l'ensemble du projet de loi d'habilitation à prendre par ordonnances les mesures pour le renforcement du dialogue social (texte de la commission mixte paritaire)."@fr ;
+        custom:voters      "518"^^xsd:positiveInteger ;
+        custom:required    "248"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "421"^^xsd:positiveInteger ;
+        custom:against     "74"^^xsd:positiveInteger ;
+        custom:abstention  "23"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1060
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1060" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 1220 de M. Pierre-Henri Dumont après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "186"^^xsd:positiveInteger ;
+        custom:required    "91"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "62"^^xsd:positiveInteger ;
+        custom:against     "118"^^xsd:positiveInteger ;
+        custom:abstention  "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1061
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1061" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 224 de Mme Kuster et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "186"^^xsd:positiveInteger ;
+        custom:required    "90"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "59"^^xsd:positiveInteger ;
+        custom:against     "119"^^xsd:positiveInteger ;
+        custom:abstention  "8"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1062
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1062" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 151 de M. Leclerc et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "189"^^xsd:positiveInteger ;
+        custom:required    "90"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "59"^^xsd:positiveInteger ;
+        custom:against     "120"^^xsd:positiveInteger ;
+        custom:abstention  "10"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1063
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1063" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 1190 de M. Ruffin après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "130"^^xsd:positiveInteger ;
+        custom:required    "64"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "31"^^xsd:positiveInteger ;
+        custom:against     "96"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1064
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1064" ;
+        schema:date        "2018-07-17"^^xsd:date ;
+        schema:title       "l'amendement n° 1522 de Mme Genevard et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "108"^^xsd:positiveInteger ;
+        custom:required    "53"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "29"^^xsd:positiveInteger ;
+        custom:against     "76"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1065
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1065" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1843 de M. Gomès après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "222"^^xsd:positiveInteger ;
+        custom:required    "109"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "89"^^xsd:positiveInteger ;
+        custom:against     "128"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1066
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1066" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 427 de M. Descoeur et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "223"^^xsd:positiveInteger ;
+        custom:required    "109"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "89"^^xsd:positiveInteger ;
+        custom:against     "128"^^xsd:positiveInteger ;
+        custom:abstention  "6"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1067
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1067" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 854 de M. Vigier et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "220"^^xsd:positiveInteger ;
+        custom:required    "109"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "90"^^xsd:positiveInteger ;
+        custom:against     "126"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1068
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1068" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 856 de M. Vigier et les amendements identiques suivants après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "223"^^xsd:positiveInteger ;
+        custom:required    "110"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "91"^^xsd:positiveInteger ;
+        custom:against     "127"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1069
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1069" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 2417 (rect.) de Mme Sage après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "144"^^xsd:positiveInteger ;
+        custom:required    "72"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "58"^^xsd:positiveInteger ;
+        custom:against     "85"^^xsd:positiveInteger ;
+        custom:abstention  "1"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V107
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V107" ;
+        schema:date        "2017-08-03"^^xsd:date ;
+        schema:title       "l'ensemble du projet de loi pour la confiance dans la vie politique (texte de la commission mixte paritaire)."@fr ;
+        custom:voters      "434"^^xsd:positiveInteger ;
+        custom:required    "194"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "383"^^xsd:positiveInteger ;
+        custom:against     "3"^^xsd:positiveInteger ;
+        custom:abstention  "48"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1070
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1070" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1201 de M. Mélenchon après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "112"^^xsd:positiveInteger ;
+        custom:required    "56"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "15"^^xsd:positiveInteger ;
+        custom:against     "95"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1071
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1071" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1123 de M. El Guerrab et l'amendement identique suivant après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "105"^^xsd:positiveInteger ;
+        custom:required    "52"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "33"^^xsd:positiveInteger ;
+        custom:against     "70"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1072
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1072" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1392 de Mme Untermaier après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "118"^^xsd:positiveInteger ;
+        custom:required    "60"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "47"^^xsd:positiveInteger ;
+        custom:against     "71"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1073
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1073" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1433 de Mme Untermaier après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "117"^^xsd:positiveInteger ;
+        custom:required    "58"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "44"^^xsd:positiveInteger ;
+        custom:against     "71"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1074
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1074" ;
+        schema:date        "2018-07-18"^^xsd:date ;
+        schema:title       "l'amendement n° 1208 de M. Ruffin après l'article premier du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "99"^^xsd:positiveInteger ;
+        custom:required    "49"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "24"^^xsd:positiveInteger ;
+        custom:against     "72"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1075
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1075" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 2285 de M. Chassaigne après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "75"^^xsd:positiveInteger ;
+        custom:required    "38"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "30"^^xsd:positiveInteger ;
+        custom:against     "45"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1076
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1076" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 210 de M. Charles de Courson et l'amendement identique suivant après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "134"^^xsd:positiveInteger ;
+        custom:required    "65"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "59"^^xsd:positiveInteger ;
+        custom:against     "70"^^xsd:positiveInteger ;
+        custom:abstention  "5"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1077
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1077" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 773 (rect.) de Mme Bello après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "89"^^xsd:positiveInteger ;
+        custom:required    "43"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "45"^^xsd:positiveInteger ;
+        custom:against     "40"^^xsd:positiveInteger ;
+        custom:abstention  "4"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1078
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1078" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 1818 de M. Potier après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "109"^^xsd:positiveInteger ;
+        custom:required    "54"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "26"^^xsd:positiveInteger ;
+        custom:against     "81"^^xsd:positiveInteger ;
+        custom:abstention  "2"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1079
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1079" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 1815 de M. Potier après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "98"^^xsd:positiveInteger ;
+        custom:required    "48"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "22"^^xsd:positiveInteger ;
+        custom:against     "73"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V108
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V108" ;
+        schema:date        "2017-08-03"^^xsd:date ;
+        schema:title       "l'amendement n° 24 de Mme Obono à l'article 2 du projet de loi organique pour la confiance dans la vie politique (nouvelle lecture)."@fr ;
+        custom:voters      "169"^^xsd:positiveInteger ;
+        custom:required    "84"^^xsd:positiveInteger ;
+        custom:absent      "2"^^xsd:positiveInteger ;
+        custom:for         "45"^^xsd:positiveInteger ;
+        custom:against     "121"^^xsd:positiveInteger ;
+        custom:abstention  "3"^^xsd:positiveInteger .
+
+suffrage:VTANR5L15V1080
+        rdf:type           dbo:Suffrage ;
+        schema:identifier  "VTANR5L15V1080" ;
+        schema:date        "2018-07-19"^^xsd:date ;
+        schema:title       "l'amendement n° 1816 de M. Potier et l'amendement identique suivant après l'article 2 du projet de loi constitutionnelle pour une démocratie plus représentative, responsable et efficace (première lecture)."@fr ;
+        custom:voters      "108"^^xsd:positiveInteger ;
+        custom:required    "54"^^xsd:positiveInteger ;
+        custom:absent      "1"^^xsd:positiveInteger ;
+        custom:for         "25"^^xsd:pos
