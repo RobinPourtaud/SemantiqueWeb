@@ -1,0 +1,18 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+
+SELECT ((COUNT(distinct ?depute_f)/?depute_t*100) AS ?Parité) (?depute_t AS ?Total)
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+WHERE {
+  ?depute_f schema:gender "féminin"@fr .
+  ?depute_f custom:isActive "0"^^xsd:boolean.
+  {
+    SELECT ((COUNT(distinct ?depute)) AS ?depute_t)
+    WHERE {
+  		?depute custom:isActive "0"^^xsd:boolean.
+    }
+  }
+}
+GROUP BY ?depute_t
