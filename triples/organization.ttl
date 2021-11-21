@@ -1,13 +1,14 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dbr:   <http://dbpedia.org/resource> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
 @prefix organization: <https://fuseki.dolr.es/organization/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 organization:les-republicains
         a                     schema:Organization ;
         schema:alternateName  "LR"@fr ;
-        schema:ethicsPolicy   dbr:Gaullism , dbr:Liberalism , dbr:Liberal_conservatism , dbr:Christian_democracy ;
+        schema:ethicsPolicy   "droite"@fr ;
+        schema:ethicsPolicy   dbr:Liberal_conservatism , dbr:Gaullism , dbr:Christian_democracy , dbr:Liberalism ;
         schema:foundingDate   "2015"^^xsd:gYear ;
         schema:identifier     "P001" ;
         schema:name           "Les Républicains"@fr ;
@@ -16,6 +17,7 @@ organization:les-republicains
 organization:socialistes-et-apparentes
         a                     schema:Organization ;
         schema:alternateName  "SOC"@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy ;
         schema:foundingDate   "2018"^^xsd:gYear ;
         schema:identifier     "P002" ;
@@ -25,6 +27,7 @@ organization:socialistes-et-apparentes
 organization:socialiste
         a                     schema:Organization ;
         schema:alternateName  "SOC"@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy ;
         schema:foundingDate   "1958"^^xsd:gYear ;
         schema:identifier     "P003" ;
@@ -34,7 +37,8 @@ organization:socialiste
 organization:union-pour-un-mouvement-populaire
         a                     schema:Organization ;
         schema:alternateName  "UMP"@fr ;
-        schema:ethicsPolicy   dbr:Gaullism , dbr:Liberalism , dbr:Liberal_conservatism , dbr:Christian_democracy ;
+        schema:ethicsPolicy   "droite"@fr ;
+        schema:ethicsPolicy   dbr:Liberal_conservatism , dbr:Gaullism , dbr:Christian_democracy , dbr:Liberalism ;
         schema:foundingDate   "2002"^^xsd:gYear ;
         schema:identifier     "P004" ;
         schema:name           "Union pour un Mouvement Populaire"@fr .
@@ -42,6 +46,7 @@ organization:union-pour-un-mouvement-populaire
 organization:socialiste-ecologiste-et-republicain
         a                     schema:Organization ;
         schema:alternateName  "SER"@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy , dbr:Ecology_movement ;
         schema:foundingDate   "2016"^^xsd:gYear ;
         schema:identifier     "P005" ;
@@ -51,6 +56,7 @@ organization:socialiste-ecologiste-et-republicain
 organization:socialiste-radical-citoyen-et-divers-gauche
         a                     schema:Organization ;
         schema:alternateName  "S.R.C."@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy ;
         schema:foundingDate   "2007"^^xsd:gYear ;
         schema:identifier     "P006" ;
@@ -67,7 +73,7 @@ organization:deputes-nappartenant-a-aucun-groupe
 organization:gauche-democrate-et-republicaine
         a                     schema:Organization ;
         schema:alternateName  "GDR"@fr ;
-        schema:ethicsPolicy   "antiliberalisme"@fr ;
+        schema:ethicsPolicy   "antiliberalisme"@fr , "extreme-gauche"@fr ;
         schema:ethicsPolicy   dbr:Communism ;
         schema:foundingDate   "2007"^^xsd:gYear ;
         schema:identifier     "P008" ;
@@ -84,6 +90,7 @@ organization:non-inscrit
 organization:socialiste-republicain-et-citoyen
         a                     schema:Organization ;
         schema:alternateName  "SRC"@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy ;
         schema:foundingDate   "2012"^^xsd:gYear ;
         schema:identifier     "P010" ;
@@ -93,7 +100,8 @@ organization:socialiste-republicain-et-citoyen
 organization:mouvement-democrate-modem-et-democrates-apparentes
         a                     schema:Organization ;
         schema:alternateName  "MODEM"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Humanism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy , dbr:Humanism ;
         schema:foundingDate   "2007"^^xsd:gYear ;
         schema:identifier     "P011" ;
         schema:name           "Mouvement Démocrate (MoDem) et Démocrates apparentés"@fr ;
@@ -102,7 +110,8 @@ organization:mouvement-democrate-modem-et-democrates-apparentes
 organization:union-des-democrates-et-independants
         a                     schema:Organization ;
         schema:alternateName  "UDI"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy ;
         schema:foundingDate   "2012"^^xsd:gYear ;
         schema:identifier     "P012" ;
         schema:name           "Union des démocrates et indépendants"@fr ;
@@ -111,7 +120,7 @@ organization:union-des-democrates-et-independants
 organization:depute-e-s-communistes-et-republicains
         a                     schema:Organization ;
         schema:alternateName  "CR"@fr ;
-        schema:ethicsPolicy   "antiliberalisme"@fr ;
+        schema:ethicsPolicy   "antiliberalisme"@fr , "extreme-gauche"@fr ;
         schema:ethicsPolicy   dbr:Communism ;
         schema:foundingDate   "2002"^^xsd:gYear ;
         schema:identifier     "P013" ;
@@ -121,7 +130,8 @@ organization:depute-e-s-communistes-et-republicains
 organization:nouveau-centre
         a                     schema:Organization ;
         schema:alternateName  "NC"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy ;
         schema:foundingDate   "2007"^^xsd:gYear ;
         schema:identifier     "P014" ;
         schema:name           "Nouveau Centre"@fr ;
@@ -130,6 +140,7 @@ organization:nouveau-centre
 organization:libertes-et-territoires
         a                     schema:Organization ;
         schema:alternateName  "LT"@fr ;
+        schema:ethicsPolicy   "centre"@fr ;
         schema:foundingDate   "2018"^^xsd:gYear ;
         schema:identifier     "P015" ;
         schema:name           "Libertés et Territoires"@fr .
@@ -137,7 +148,8 @@ organization:libertes-et-territoires
 organization:udi-agir-et-independants
         a                     schema:Organization ;
         schema:alternateName  "UDI-AGIR"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Humanism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy , dbr:Humanism ;
         schema:foundingDate   "2012"^^xsd:gYear ;
         schema:identifier     "P016" ;
         schema:name           "UDI, Agir et Indépendants"@fr .
@@ -145,7 +157,7 @@ organization:udi-agir-et-independants
 organization:la-france-insoumise
         a                     schema:Organization ;
         schema:alternateName  "FI"@fr ;
-        schema:ethicsPolicy   "antiliberalisme"@fr , "écosocialisme"@fr ;
+        schema:ethicsPolicy   "antiliberalisme"@fr , "écosocialisme"@fr , "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Ecology_movement , dbr:Populism , dbr:Sovereignty , dbr:Alter-globalization ;
         schema:foundingDate   "2017"^^xsd:gYear ;
         schema:identifier     "P017" ;
@@ -155,6 +167,7 @@ organization:la-france-insoumise
 organization:union-pour-la-democratie-francaise
         a                     schema:Organization ;
         schema:alternateName  "UDF"@fr ;
+        schema:ethicsPolicy   "centre"@fr ;
         schema:foundingDate   "1978"^^xsd:gYear ;
         schema:identifier     "P018" ;
         schema:name           "Union pour la Démocratie Française"@fr ;
@@ -163,6 +176,7 @@ organization:union-pour-la-democratie-francaise
 organization:la-republique-en-marche
         a                     schema:Organization ;
         schema:alternateName  "LAREM"@fr ;
+        schema:ethicsPolicy   "centre"@fr ;
         schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Trasformismo , dbr:Reformism ;
         schema:foundingDate   "2016"^^xsd:gYear ;
         schema:identifier     "P019" ;
@@ -172,7 +186,8 @@ organization:la-republique-en-marche
 organization:udi-et-independants
         a                     schema:Organization ;
         schema:alternateName  "UDI"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy ;
         schema:foundingDate   "2012"^^xsd:gYear ;
         schema:identifier     "P020" ;
         schema:name           "UDI et Indépendants"@fr ;
@@ -181,7 +196,8 @@ organization:udi-et-independants
 organization:agir-ensemble
         a                     schema:Organization ;
         schema:alternateName  "AGIR-E"@fr ;
-        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Republicanism ;
+        schema:ethicsPolicy   "centre-droite"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Republicanism , dbr:Federalisation_of_the_European_Union ;
         schema:foundingDate   "2020"^^xsd:gYear ;
         schema:identifier     "P021" ;
         schema:name           "Agir ensemble"@fr .
@@ -189,7 +205,8 @@ organization:agir-ensemble
 organization:radical-republicain-democrate-et-progressiste
         a                     schema:Organization ;
         schema:alternateName  "RRDP"@fr ;
-        schema:ethicsPolicy   dbr:Republicanism , dbr:Radical_politics , dbr:Solidarism , dbr:Progressive_Social_Movement ;
+        schema:ethicsPolicy   "extreme-gauche"@fr ;
+        schema:ethicsPolicy   dbr:Republicanism , dbr:Solidarism , dbr:Radical_politics , dbr:Progressive_Social_Movement ;
         schema:foundingDate   "2012"^^xsd:gYear ;
         schema:identifier     "P022" ;
         schema:name           "Radical, républicain, démocrate et progressiste"@fr ;
@@ -198,6 +215,7 @@ organization:radical-republicain-democrate-et-progressiste
 organization:nouvelle-gauche
         a                     schema:Organization ;
         schema:alternateName  "NG"@fr ;
+        schema:ethicsPolicy   "gauche"@fr ;
         schema:ethicsPolicy   dbr:Socialism , dbr:Democracy ;
         schema:foundingDate   "2017"^^xsd:gYear ;
         schema:identifier     "P023" ;
@@ -207,7 +225,8 @@ organization:nouvelle-gauche
 organization:mouvement-democrate-et-apparentes
         a                     schema:Organization ;
         schema:alternateName  "MODEM"@fr ;
-        schema:ethicsPolicy   dbr:Christian_democracy , dbr:Social_liberalism , dbr:Humanism , dbr:Federalisation_of_the_European_Union ;
+        schema:ethicsPolicy   "centre"@fr ;
+        schema:ethicsPolicy   dbr:Social_liberalism , dbr:Federalisation_of_the_European_Union , dbr:Christian_democracy , dbr:Humanism ;
         schema:foundingDate   "2007"^^xsd:gYear ;
         schema:identifier     "P024" ;
         schema:name           "Mouvement Démocrate et apparentés"@fr ;
