@@ -1,9 +1,9 @@
-@prefix schema:  https://schema.org/ .
+@prefix schema:  http://schema.org/ .
 @prefix rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns# .
 @prefix custom:  https://fuseki.dolr.es/ontology/ .
 @prefix rdfs: http://www.w3.org/2000/01/rdf-schema#%27 .
 @prefix owl: http://www.w3.org/2002/07/owl# .
-@prefix dbo : https://dbpedia.org/ontology/ . 
+@prefix dbo : http://dbpedia.org/ontology/ . 
 
 owl:Thing rdf:type owl:Class .
 
@@ -39,33 +39,33 @@ custom:hasAdministrativeArea rdf:type owl:ObjectProperty ;
     rdfs:domain custom:ParliamentMember ;
     rdfs:range schema:AdministrativeArea .
 
-custom:hasOrganization rdf:type owl:ObjectProperty
+custom:hasOrganization rdf:type owl:ObjectProperty ;
     rdfs:domain custom:ParliamentMember ; 
     rdfs:range schema:Organization . 
 
-custom:hasAge rdf:type owl:ObjectProperty
+custom:hasAge rdf:type owl:ObjectProperty ;
     rdfs:domain custom:ParliamentMember;
     rdfs:range dbo:age.
 
-custom:isBinary rdf:type owl:ObjectProperty
+custom:isBinary rdf:type owl:ObjectProperty ;
     rdfs:domain custom:ParliamentMember;
     rdfs:range schema:gender .
 
-custom:isWoman rdf:type owl:ObjectProperty
+custom:isWoman rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf custom:isBinary ;
     rdfs:domain custom:ParliamentMember ;
     rdfs:range _:restrictionWoman .
     .
 
-custom:hasOneMandates rdf:type owl:ObjectProperty
-    rdfs:domain custom:ParliamentMember 
+custom:hasOneMandates rdf:type owl:ObjectProperty ;
+    rdfs:domain custom:ParliamentMember ;
     rdfs:range _:hasOneMandates.
     
-custom:hasMultipleMandates rdf:type owl:ObjectProperty
-    rdfs:domain custom:ParliamentMember;
+custom:hasMultipleMandates rdf:type owl:ObjectProperty ;
+    rdfs:domain custom:ParliamentMember ;
     owl:inverseOf custom:hasOneMandates.
 
-custom:isMan rdf:type owl:ObjectProperty
+custom:isMan rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf f:isBinary ;
     owl:inverseOf custom:isWoman . 
 
@@ -94,9 +94,9 @@ custom:isNotActive rdf:type owl:ObjectProperty ;
 
 
 
-_:restrictionWoman rdf:type owl:Restriction
+_:restrictionWoman rdf:type owl:Restriction ;
     owl:onProperty schema:gender ;
-    owl:hasValue "féminin"@fr ;
+    owl:hasValue "féminin"@fr .
 
 
 
