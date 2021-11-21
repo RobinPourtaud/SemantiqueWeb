@@ -3,6 +3,7 @@
 @prefix custom:  https://fuseki.dolr.es/ontology/ .
 @prefix rdfs: http://www.w3.org/2000/01/rdf-schema#%27 .
 @prefix owl: http://www.w3.org/2002/07/owl# .
+@prefix dbo : https://dbpedia.org/ontology/ . 
 
 owl:Thing rdf:type owl:Class .
 
@@ -16,9 +17,23 @@ schema:Organization rdf:type owl:Class;
     rdfs:subClassOf owl:Thing .
 
 custom:ParliamentMember rdf:type owl:Class ;
+    rdfs:subClassOf dbo:Politician .
+
+dbo:Politician rdf:type owl:Class ;
     rdfs:subClassOf schema:Person .
 
 schema:AdministrativeArea rdfs:subClassOf schema:Place .
+
+dbo:Organisation rdf:type owl:Class ;
+    owl:equivalentClass schema:Organization .
+
+dbo:Place rdf:type owl:Class ;
+    owl:equivalentClass schema:Place .
+
+dbo:Person rdf:type owl:Class ; 
+    owl:equivalentClass schema:Person.
+
+########################################################
 
 custom:hasAdministrativeArea rdf:type owl:ObjectProperty ;
     rdfs:domain custom:ParliamentMember ;
@@ -28,8 +43,63 @@ custom:hasOrganization rdf:type owl:ObjectProperty
     rdfs:domain custom:ParliamentMember ; 
     rdfs:range schema:Organization . 
 
-dbo:Organisation rdf:type owl:Class ;
-    owl:equivalentClass schema:Organization .
+custom:hasAge rdf:type owl:ObjectProperty
+    rdfs:domain custom:ParliamentMember;
+    rdfs:range dbo:age.
 
-dbo:Place rdf:type owl:Class ;
-    owl:equivalentClass schema:Place .
+custom:isBinary rdf:type owl:ObjectProperty
+    rdfs:domain custom:ParliamentMember;
+    rdfs:range schema:gender .
+
+custom:isWoman rdf:type owl:ObjectProperty
+    rdfs:subPropertyOf custom:isBinary ;
+    rdfs:domain custom:ParliamentMember ;
+    rdfs:range _:restrictionWoman .
+    .
+
+custom:hasOneMandates rdf:type owl:ObjectProperty
+    rdfs:domain custom:ParliamentMember 
+    rdfs:range _:hasOneMandates.
+    
+custom:hasMultipleMandates rdf:type owl:ObjectProperty
+    rdfs:domain custom:ParliamentMember;
+    owl:inverseOf custom:hasOneMandates.
+
+custom:isMan rdf:type owl:ObjectProperty
+    rdfs:subPropertyOf f:isBinary ;
+    owl:inverseOf custom:isWoman . 
+
+ 
+
+#custom:isYoung rdf:type owl:ObjectProperty
+#   rdfs:subPropertyOf custom:hasAge ;
+#   rdfs:domain custom:ParliamentMember . 
+
+#custom:isOld rdf:type owl:ObjectProperty
+#   rdfs:subPropertyOf custom:hasAge;
+#  rdfs:domain custom:ParliamentMember 
+
+
+
+
+custom:isNotActive rdf:type owl:ObjectProperty ;
+    owl:inverseOf custom:isActive .
+
+
+### Restriction
+
+#_:restrictionYoung rdf:type owl:Restriction ;
+#   owl:onProperty f:age ;
+#    owl:hasValue > 40??
+
+
+
+_:restrictionWoman rdf:type owl:Restriction
+    owl:onProperty schema:gender ;
+    owl:hasValue "féminin"@fr ;
+
+
+
+_:restrictionOneMandats rdf:type owl:Restriction ;
+    owl:onProperty custom:mandatesNumber ;
+    owl:hasValue "1"^^xsd:positiveInteger.
