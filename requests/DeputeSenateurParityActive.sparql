@@ -1,0 +1,46 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+PREFIX custom_s:  <http://localhost/> 
+
+SELECT (?percentage_d AS ?Parité_députés) (?percentage_s AS ?Parité_sénateurs)
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/senateurs>
+WHERE  {
+    {
+        SELECT ((COUNT(distinct ?depute_f)*100)/?depute_t AS ?percentage_d)
+        WHERE {
+            ?depute_f schema:gender "féminin"@fr .
+            ?depute_f custom:isActive "1"^^xsd:boolean.
+        
+            # Nombre de députés total
+            {
+                SELECT (COUNT(distinct ?depute) AS ?depute_t)
+                WHERE {
+                    ?depute rdf:type custom:ParliamentMember .
+                    ?depute custom:isActive "1"^^xsd:boolean.
+                }
+            }
+        }
+        GROUP BY ?depute_t
+    }
+    {
+    SELECT ((COUNT(distinct ?senateur_f)*100)/?senateur_t AS ?percentage_s)
+        WHERE {
+            ?senateur_f custom_s:actif "true"^^xsd:boolean .
+            ?senateur_f schema:honorificPrefix "Mme" .
+        
+            # Nombre de sénateur total
+            {
+                SELECT (COUNT(distinct ?senateur) AS ?senateur_t)
+                WHERE {
+                    ?senateur custom_s:actif "true"^^xsd:boolean .
+                }
+            }
+        }
+        GROUP BY ?senateur_t
+    }
+}
+GROUP BY ?percentage_d ?percentage_s
+

@@ -1,5 +1,5 @@
 PREFIX schema: <http://schema.org>
-PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 PREFIX custom: <https://fuseki.dolr.es/ontology/>
 PREFIX suffrage: <https://fuseki.dolr.es/suffrage/>
