@@ -1,5 +1,5 @@
-PREFIX schema: <https://schema.org/>
-PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX schema: <http://schema.org/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
 PREFIX administrativeArea: <https://fuseki.dolr.es/administrativeArea/>
@@ -11,8 +11,8 @@ CONSTRUCT {
   ?parliamentMember a custom:ParliamentMember;
     schema:identifier ?identifier;
     schema:gender ?gender;
-    schema:firstName ?firstName;
     schema:givenName ?givenName;
+    schema:familyName ?familyName;
     schema:birthDate ?birthDate;
     dbo:age ?ageInteger;
     schema:jobTitle ?jobTitle;
@@ -46,8 +46,8 @@ WHERE {
   OPTIONAL { FILTER (?civ = "Mme")
     BIND(STRLANG("féminin","fr") AS ?gender)
   }
-  BIND(?prenom AS ?firstName)
-  BIND(?nom AS ?givenName)
+  BIND(?prenom AS ?givenName)
+  BIND(?nom AS ?familyName)
   BIND(xsd:date(?naissance) AS ?birthDate)
   BIND(xsd:positiveInteger(?age) AS ?ageInteger)
   BIND(STRLANG(?job, "fr") AS ?jobTitle)

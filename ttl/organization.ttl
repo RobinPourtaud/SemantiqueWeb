@@ -1,8 +1,8 @@
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dbr:   <http://dbpedia.org/resource> .
-@prefix organization: <https://fuseki.dolr.es/organization/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix organization: <https://fuseki.dolr.es/organization/> .
 
 organization:les-republicains
         a                     schema:Organization ;

@@ -1,0 +1,36 @@
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX custom: <https://fuseki.dolr.es/ontology/>
+
+SELECT (?orga_name as ?Nom_de_l_organisation) (?avgScore_f as ?Score_de_participation_moyen_femmes) (?avgScore_h as ?Score_de_participation_moyen_hommes)
+
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/organization>
+WHERE {
+    ?organization rdf:type schema:Organization .
+    ?organization schema:name ?orga_name .
+    ?organization_sub schema:name ?orga_name .
+    {
+    	SELECT ?organization_sub (AVG(?participation_f) as ?avgScore_f)
+        WHERE {
+            ?depute_f custom:isActive "1"^^xsd:boolean.
+      		?depute_f schema:gender "féminin"@fr .
+            ?depute_f custom:participationScore ?participation_f .
+            ?depute_f schema:Organization ?organization_sub .
+        }
+        GROUP BY ?organization_sub
+    }
+    {
+    	SELECT ?organization_sub (AVG(?participation_h) as ?avgScore_h)
+        WHERE {
+            ?depute_h custom:isActive "1"^^xsd:boolean.
+      		?depute_h schema:gender "masculin"@fr .
+            ?depute_h custom:participationScore ?participation_h .
+      		?depute_h schema:Organization ?organization_sub .
+        }
+        GROUP BY ?organization_sub
+    }
+}
+GROUPBY ?orga_name ?avgScore_h ?avgScore_f
+ORDERBY DESC(?avgScore_f) DESC(?avgScore_h)
