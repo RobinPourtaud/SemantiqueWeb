@@ -1,0 +1,44 @@
+@prefix : <https://fuseki.dolr.es/parliamentMember/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix custom: <https://fuseki.dolr.es/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix organization: <https://fuseki.dolr.es/organization/> .
+@prefix administrativeArea: <https://fuseki.dolr.es/administrativeArea/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+schema:AdministrativeArea owl:equivalentClass https://www.wikidata.org/wiki/Q149621 .
+schema:AdministrativeArea owl:equivalentClass https://dbpedia.org/ontology/AdministrativeRegion;
+
+schema:Organization owl:equivalentClass https://www.wikidata.org/wiki/Q848197 .
+schema:Organization owl:equivalentClass https://dbpedia.org/ontology/Organisation .
+
+schema:gender owl:equivalentProperty https://dbpedia.org/ontology/gender .
+schema:gender owl:equivalentProperty http://xmlns.com/foaf/0.1/gender .
+schema:gender owl:equivalentProperty http://www.w3.org/2006/vcard/ns#hasGender .
+schema:gender owl:equivalentProperty http://d-nb.info/standards/elementset/gnd#gender .
+schema:gender owl:equivalentProperty http://purl.bdrc.io/ontology/core/personGender .
+schema:gender owl:equivalentProperty https://www.wikidata.org/wiki/Property:P21 .
+
+schema:givenName owl:equivalentProperty http://xmlns.com/foaf/0.1/givenName .
+schema:givenName owl:equivalentProperty http://www.w3.org/2006/vcard/ns#given-name .
+schema:givenName owl:equivalentProperty http://d-nb.info/standards/elementset/gnd#forename .
+schema:givenName owl:equivalentProperty https://www.wikidata.org/wiki/Property:P735 .
+
+schema:familyName owl:equivalentProperty http://xmlns.com/foaf/0.1/familyName .
+schema:familyName owl:equivalentProperty http://www.w3.org/2006/vcard/ns#family-name .
+schema:familyName owl:equivalentProperty http://d-nb.info/standards/elementset/gnd#surname .
+schema:familyName owl:equivalentProperty http://purl.bdrc.io/ontology/core/PersonFamilyName .
+schema:familyName owl:equivalentProperty https://www.wikidata.org/wiki/Property:P734 .
+
+schema:birthDate owl:equivalentProperty http://www.w3.org/2006/vcard/ns#bday .
+schema:birthDate owl:equivalentProperty http://www.loc.gov/standards/mads/rdf/v1.rdf#birthDate .
+schema:birthDate owl:equivalentProperty http://dbpedia.org/ontology/birthDate .
+schema:birthDate owl:equivalentProperty http://d-nb.info/standards/elementset/gnd#dateOfBirth .
+schema:birthDate owl:equivalentProperty http://purl.bdrc.io/ontology/core/PersonBirth .
+schema:birthDate owl:equivalentProperty http://pcp-on-web.de/ontology#dateOfBirth .
+schema:birthDate owl:equivalentProperty https://www.wikidata.org/wiki/Property:P569 .
