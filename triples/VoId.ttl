@@ -1,0 +1,88 @@
+@prefix :  <https://fuseki.dolr.es/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema:  <https://schema.org/> .
+@prefix dbo:  <https://dbpedia.org/ontology/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbr:  <http://dbpedia.org/resource> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix custom:  <https://fuseki.dolr.es/ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+:administrativeArea a void:Dataset;
+                    void:sparqlEndpoint <https://fuseki.dolr.es/>;
+                    void:dataDump <https://fuseki.dolr.es/projet>;
+                    dcterms:title "French circonscriptions";
+                    dcterms:description "A dataset containing all the french circonscriptions used during elections";
+                    dcterms:contributor :RobinPOURTAUD;
+                    dcterms:contributor :MaximeDOLORES;
+                    dcterms:contributor :JulienAUBERT;
+                    dcterms:contributor :MohamedBARAGAA;
+                    dcterms:source "https://www.data.gouv.fr/fr/datasets/circonscriptions-legislatives-table-de-correspondance-des-communes-et-des-cantons-pour-les-elections-legislatives-de-2012-et-sa-mise-a-jour-pour-les-elections-legislatives-2017/";
+                    dcterms:creator dbr:Government_of_France;
+                    dcterms:modified "2017-04-11"^^xsd:date .
+
+:organization a void:Dataset;
+                    void:sparqlEndpoint <https://fuseki.dolr.es/>;
+                    void:dataDump <https://fuseki.dolr.es/projet>;
+                    dcterms:title "French parliament political groups";
+                    dcterms:description "A dataset containing all the french parliament political groups since 2002";
+                    dcterms:contributor :RobinPOURTAUD;
+                    dcterms:contributor :MaximeDOLORES;
+                    dcterms:contributor :JulienAUBERT;
+                    dcterms:contributor :MohamedBARAGAA;
+                    dcterms:source "https://www.data.gouv.fr/fr/datasets/historique-des-deputes-de-lassemblee-nationale-depuis-2002-informations-et-statistiques/";
+                    dcterms:creator dbr:Government_of_France;
+                    dcterms:modified "2021-07-17"^^xsd:date .
+
+:parliamentMember a void:Dataset;
+                    void:sparqlEndpoint <https://fuseki.dolr.es/>;
+                    void:dataDump <https://fuseki.dolr.es/projet>;
+                    dcterms:title "French parliament members";
+                    dcterms:description "A dataset containing all the french parliament members since 2002";
+                    dcterms:contributor :RobinPOURTAUD;
+                    dcterms:contributor :MaximeDOLORES;
+                    dcterms:contributor :JulienAUBERT;
+                    dcterms:contributor :MohamedBARAGAA;
+                    dcterms:source "https://www.data.gouv.fr/fr/datasets/historique-des-deputes-de-lassemblee-nationale-depuis-2002-informations-et-statistiques/";
+                    dcterms:creator dbr:Government_of_France;
+                    dcterms:modified "2021-07-17"^^xsd:date .
+
+:RobinPOURTAUD a schema:Person;
+               schema:email "pourtaud@outlook.fr";
+               schema:colleague :MaximeDOLORES;
+               schema:colleague :JulienAUBERT;
+               schema:colleague :MohamedBARAGAA;
+               schema:familyName "Pourtaud";
+               schema:givenName "Robin" .
+
+:JulienAUBERT  a schema:Person;
+               schema:email "julienaubeb@gmail.com";
+               schema:colleague :MaximeDOLORES;
+               schema:colleague :RobinPOURTAUD;
+               schema:colleague :MohamedBARAGAA;
+               schema:familyName "Aubert";
+               schema:givenName "Julien" .
+
+:MaximeDOLORES a schema:Person;
+               schema:email "maxime.dolores@pm.me";
+               schema:colleague :RobinPOURTAUD;
+               schema:colleague :JulienAUBERT;
+               schema:colleague :MohamedBARAGAA;
+               schema:familyName "Dolores";
+               schema:givenName "Maxime" .
+
+
+:MohamedBARAGAA a schema:Person;
+               schema:colleague :RobinPOURTAUD;
+               schema:colleague :JulienAUBERT;
+               schema:colleague :MaximeDOLORES;
+               schema:familyName "Ba Ragaa";
+               schema:givenName "Mohamed" .
+
+
+
+
+
+
+

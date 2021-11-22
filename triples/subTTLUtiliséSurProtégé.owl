@@ -1,0 +1,1874 @@
+@prefix : <https://fuseki.dolr.es/parliamentMember/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix custom: <https://fuseki.dolr.es/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix organization: <https://fuseki.dolr.es/organization/> .
+@prefix administrativeArea: <https://fuseki.dolr.es/administrativeArea/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:ObjectProperty ;
+                    owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#hasMember> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasMember
+<http://www.co-ode.org/ontologies/ont.owl#hasMember> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain schema:Organization ;
+                      rdfs:range custom:ParliamentMember .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/age
+dbo:age rdf:type owl:DatatypeProperty .
+
+
+###  http://dbpedia.org/ontology/constituencyDistrict
+dbo:constituencyDistrict rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/AdministrativeArea
+schema:AdministrativeArea rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/birthDate
+schema:birthDate rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/email
+schema:email rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/familyName
+schema:familyName rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/gender
+schema:gender rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/givenName
+schema:givenName rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/identifier
+schema:identifier rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/jobTitle
+schema:jobTitle rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/url
+schema:url rdf:type owl:DatatypeProperty .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#isWoman
+<http://www.co-ode.org/ontologies/ont.owl#isWoman> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://fuseki.dolr.es/ontology/amendementsAdoptes
+custom:amendementsAdoptes rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/amendementsProposes
+custom:amendementsProposes rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/amendementsSignes
+custom:amendementsSignes rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/commissionPresences
+custom:commissionPresences rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/experienceYears
+custom:experienceYears rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/hemicycleInterventions
+custom:hemicycleInterventions rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/hemicycleInterventions_courtes
+custom:hemicycleInterventions_courtes rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/isActive
+custom:isActive rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/loyaltyScore
+custom:loyaltyScore rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/majorityScore
+custom:majorityScore rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/mandatesNumber
+custom:mandatesNumber rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/participationScore
+custom:participationScore rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/participationScoreSpeciality
+custom:participationScoreSpeciality rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/propositionsEcrites
+custom:propositionsEcrites rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/propositionsSignees
+custom:propositionsSignees rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/questionsEcrites
+custom:questionsEcrites rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/questionsOrales
+custom:questionsOrales rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/rapports
+custom:rapports rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/semainesPresence
+custom:semainesPresence rdf:type owl:DatatypeProperty .
+
+
+###  https://fuseki.dolr.es/ontology/startingDate
+custom:startingDate rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Organisation
+dbo:Organisation rdf:type owl:Class ;
+                 owl:equivalentClass schema:Organization .
+
+
+###  http://dbpedia.org/ontology/Person
+dbo:Person rdf:type owl:Class ;
+           owl:equivalentClass schema:person .
+
+
+###  http://dbpedia.org/ontology/Place
+dbo:Place rdf:type owl:Class ;
+          owl:equivalentClass schema:Place .
+
+
+###  http://dbpedia.org/ontology/Politician
+dbo:Politician rdf:type owl:Class ;
+               rdfs:subClassOf dbo:Person .
+
+
+###  http://schema.org/AdministrativeArea
+schema:AdministrativeArea rdf:type owl:Class ;
+                          rdfs:subClassOf dbo:Place .
+
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:Class .
+
+
+###  http://schema.org/Place
+schema:Place rdf:type owl:Class .
+
+
+###  http://schema.org/person
+schema:person rdf:type owl:Class .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberActives
+<http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberActives> rdf:type owl:Class ;
+                                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty custom:isActive ;
+                                                                                         owl:hasValue "true"^^xsd:boolean
+                                                                                       ] ;
+                                                                   rdfs:subClassOf custom:ParliamentMember ;
+                                                                   owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberInactives> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberInactives
+<http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberInactives> rdf:type owl:Class ;
+                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty custom:isActive ;
+                                                                                           owl:hasValue "false"^^xsd:boolean
+                                                                                         ] ;
+                                                                     rdfs:subClassOf custom:ParliamentMember .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberNewbies
+<http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberNewbies> rdf:type owl:Class ;
+                                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty custom:mandatesNumber ;
+                                                                                         owl:hasValue 1
+                                                                                       ] ;
+                                                                   rdfs:subClassOf custom:ParliamentMember ;
+                                                                   owl:disjointWith <http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberSeniors> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberSeniors
+<http://www.co-ode.org/ontologies/ont.owl#ParliamentMemberSeniors> rdf:type owl:Class ;
+                                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty custom:mandatesNumber ;
+                                                                                                         owl:hasValue 2
+                                                                                                       ]
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty custom:mandatesNumber ;
+                                                                                                         owl:hasValue 3
+                                                                                                       ]
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty custom:mandatesNumber ;
+                                                                                                         owl:hasValue 4
+                                                                                                       ]
+                                                                                                     )
+                                                                                       ] ;
+                                                                   rdfs:subClassOf custom:ParliamentMember .
+
+
+###  https://fuseki.dolr.es/ontology/ParliamentMember
+custom:ParliamentMember rdf:type owl:Class ;
+                        rdfs:subClassOf dbo:Politician .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://fuseki.dolr.es/organization/deputes-nappartenant-a-aucun-groupe
+organization:deputes-nappartenant-a-aucun-groupe rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/gauche-democrate-et-republicaine
+organization:gauche-democrate-et-republicaine rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/les-republicains
+organization:les-republicains rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/mouvement-democrate-modem-et-democrates-apparentes
+organization:mouvement-democrate-modem-et-democrates-apparentes rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/non-inscrit
+organization:non-inscrit rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/socialiste
+organization:socialiste rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/socialiste-ecologiste-et-republicain
+organization:socialiste-ecologiste-et-republicain rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/socialiste-radical-citoyen-et-divers-gauche
+organization:socialiste-radical-citoyen-et-divers-gauche rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/socialiste-republicain-et-citoyen
+organization:socialiste-republicain-et-citoyen rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/socialistes-et-apparentes
+organization:socialistes-et-apparentes rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/union-des-democrates-et-independants
+organization:union-des-democrates-et-independants rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/organization/union-pour-un-mouvement-populaire
+organization:union-pour-un-mouvement-populaire rdf:type owl:NamedIndividual .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1001
+:PA1001 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "68"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1953-08-01"^^xsd:date ;
+        schema:email "mpdaubresse@assemblee-nationale.fr" ;
+        schema:familyName "Daubresse" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Marc-Philippe" ;
+        schema:identifier "PA1001" ;
+        schema:jobTitle "Ancien directeur d'une société de recrutement"@fr ;
+        custom:experienceYears "11"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.109"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.91"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1008
+:PA1008 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialistes-et-apparentes ;
+        dbo:age "72"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1949-06-02"^^xsd:date ;
+        schema:email "alain.david@assemblee-nationale.fr" ;
+        schema:familyName "David" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Alain" ;
+        schema:identifier "PA1008" ;
+        schema:jobTitle "Ingénieur"@fr ;
+        schema:url "alain-david.com" ,
+                   "https://facebook.com/AlainDavidAssembleeNationale" ,
+                   "https://twitter.com/AlainDavid_AN" ;
+        custom:amendementsAdoptes 186 ;
+        custom:amendementsProposes 46 ;
+        custom:amendementsSignes 3819 ;
+        custom:commissionPresences 26 ;
+        custom:experienceYears "4"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 122 ;
+        custom:hemicycleInterventions_courtes 46 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.955"^^xsd:float ;
+        custom:majorityScore "0.229"^^xsd:float ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:participationScore "0.22"^^xsd:float ;
+        custom:participationScoreSpeciality "0.65"^^xsd:float ;
+        custom:propositionsSignees 11 ;
+        custom:questionsEcrites 26 ;
+        custom:questionsOrales 4 ;
+        custom:rapports 5 ;
+        custom:semainesPresence 25 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/33-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1009
+:PA1009 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "68"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "13"^^xsd:positiveInteger ;
+        schema:birthDate "1952-12-19"^^xsd:date ;
+        schema:email "mdavid@assemblee-nationale.fr" ;
+        schema:familyName "David" ;
+        schema:gender "féminin"@fr ;
+        schema:givenName "Martine" ;
+        schema:identifier "PA1009" ;
+        schema:jobTitle "Secrétaire de direction"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/69-13> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1012
+:PA1012 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "67"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1954-05-31"^^xsd:date ;
+        schema:email "charles.delaverpilliere@assemblee-nationale.fr" ;
+        schema:familyName "de la Verpillière" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Charles" ;
+        schema:identifier "PA1012" ;
+        schema:jobTitle "Conseiller d'État"@fr ;
+        schema:url "https://facebook.com/charlesdelaverpilliere" ,
+                   "https://twitter.com/delaverpilliere" ,
+                   "www.charlesdelaverpilliere.com" ;
+        custom:amendementsAdoptes 47 ;
+        custom:amendementsProposes 5 ;
+        custom:amendementsSignes 1975 ;
+        custom:commissionPresences 22 ;
+        custom:experienceYears "14"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 7 ;
+        custom:hemicycleInterventions_courtes 20 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.959"^^xsd:float ;
+        custom:majorityScore "0.256"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.11"^^xsd:float ;
+        custom:participationScoreSpeciality "0.42"^^xsd:float ;
+        custom:propositionsSignees 7 ;
+        custom:questionsEcrites 34 ;
+        custom:questionsOrales 1 ;
+        custom:rapports 1 ;
+        custom:semainesPresence 20 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/1-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1020
+:PA1020 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "77"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1944-09-30"^^xsd:date ;
+        schema:email "bdebre@assemblee-nationale.fr" ;
+        schema:familyName "Debré" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Bernard" ;
+        schema:identifier "PA1020" ;
+        schema:jobTitle "Chirurgien des hôpitaux, professeur des Universités"@fr ;
+        schema:url "www.bernarddebre.fr" ;
+        custom:experienceYears "13"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.851"^^xsd:float ;
+        custom:majorityScore "0.14"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.96"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/75-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1023
+:PA1023 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "82"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "23"^^xsd:positiveInteger ;
+        schema:birthDate "1939-06-10"^^xsd:date ;
+        schema:email "jcdecagny@assemblee-nationale.fr" ;
+        schema:familyName "Decagny" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Claude" ;
+        schema:identifier "PA1023" ;
+        schema:jobTitle "Ancien directeur de l'hôpital de Felleries-Liessies"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-12-16"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-23> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1029
+:PA1029 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "67"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "9"^^xsd:positiveInteger ;
+        schema:birthDate "1953-10-16"^^xsd:date ;
+        schema:email "bernard.deflesselles@assemblee-nationale.fr" ;
+        schema:familyName "Deflesselles" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Bernard" ;
+        schema:identifier "PA1029" ;
+        schema:jobTitle "Ingénieur"@fr ;
+        schema:url "https://facebook.com/bernarddeflesselles" ,
+                   "https://twitter.com/BDeflesselles" ,
+                   "www.bernarddeflesselles.com" ;
+        custom:amendementsAdoptes 33 ;
+        custom:amendementsSignes 1068 ;
+        custom:commissionPresences 5 ;
+        custom:experienceYears "19"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions_courtes 2 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.931"^^xsd:float ;
+        custom:majorityScore "0.344"^^xsd:float ;
+        custom:mandatesNumber "4"^^xsd:positiveInteger ;
+        custom:participationScore "0.04"^^xsd:float ;
+        custom:participationScoreSpeciality "0.1"^^xsd:float ;
+        custom:propositionsSignees 11 ;
+        custom:questionsEcrites 10 ;
+        custom:rapports 1 ;
+        custom:semainesPresence 10 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/13-9> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1030
+:PA1030 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "84"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1937-02-04"^^xsd:date ;
+        schema:email "jpdefontaine@assemblee-nationale.fr" ;
+        schema:familyName "Defontaine" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Pierre" ;
+        schema:identifier "PA1030" ;
+        schema:jobTitle "Directeur commercial"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/62-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1031
+:PA1031 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "84"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "5"^^xsd:positiveInteger ;
+        schema:birthDate "1937-06-11"^^xsd:date ;
+        schema:email "ldegauchy@assemblee-nationale.fr" ;
+        schema:familyName "Degauchy" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Lucien" ;
+        schema:identifier "PA1031" ;
+        schema:jobTitle "Horticulteur"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.969"^^xsd:float ;
+        custom:majorityScore "0.103"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.79"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/60-5> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1032
+:PA1032 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "65"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1956-02-09"^^xsd:date ;
+        schema:email "pdeguilhem@assemblee-nationale.fr" ;
+        schema:familyName "Deguilhem" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Pascal" ;
+        schema:identifier "PA1032" ;
+        schema:jobTitle "Professeur d'Education physique (Université Bordeaux IV)"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.959"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.92"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/24-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1034
+:PA1034 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "24"^^xsd:positiveInteger ;
+        schema:birthDate "1946-09-04"^^xsd:date ;
+        schema:email "mdehoux@assemblee-nationale.fr" ;
+        schema:familyName "Dehoux" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Marcel" ;
+        schema:identifier "PA1034" ;
+        schema:jobTitle "Retraité de l'Education nationale"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-24> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1046
+:PA1046 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1946-09-11"^^xsd:date ;
+        schema:email "fdelattre@assemblee-nationale.fr" ;
+        schema:familyName "Delattre" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Francis" ;
+        schema:identifier "PA1046" ;
+        schema:jobTitle "Attaché principal d'administration centrale"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/95-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1048
+:PA1048 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "13"^^xsd:positiveInteger ;
+        schema:birthDate "1946-04-27"^^xsd:date ;
+        schema:email "mdelebarre@assemblee-nationale.fr" ;
+        schema:familyName "Delebarre" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Michel" ;
+        schema:identifier "PA1048" ;
+        schema:jobTitle "Préfet"@fr ;
+        custom:experienceYears "9"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-13> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1058
+:PA1058 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "72"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "12"^^xsd:positiveInteger ;
+        schema:birthDate "1949-02-06"^^xsd:date ;
+        schema:email "rdellagnola@assemblee-nationale.fr" ;
+        schema:familyName "Dell'Agnola" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Richard" ;
+        schema:identifier "PA1058" ;
+        schema:jobTitle "Attaché principal d'administration au ministère de la justice"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/94-12> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1062
+:PA1062 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "79"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "9"^^xsd:positiveInteger ;
+        schema:birthDate "1941-12-09"^^xsd:date ;
+        schema:email "pdelnatte@assemblee-nationale.fr" ;
+        schema:familyName "Delnatte" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Patrick" ;
+        schema:identifier "PA1062" ;
+        schema:jobTitle "Négociant en matériaux de construction"@fr ;
+        schema:url "www.patrickdelnatte.com" ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-9> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1063
+:PA1063 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "88"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "15"^^xsd:positiveInteger ;
+        schema:birthDate "1933-01-31"^^xsd:date ;
+        schema:email "jdelobel@assemblee-nationale.fr" ;
+        schema:familyName "Delobel" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean" ;
+        schema:identifier "PA1063" ;
+        schema:jobTitle "Enseignant retraité"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-15> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1066
+:PA1066 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "64"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "8"^^xsd:positiveInteger ;
+        schema:birthDate "1956-11-18"^^xsd:date ;
+        schema:email "fdeluga@assemblee-nationale.fr" ;
+        schema:familyName "Deluga" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "François" ;
+        schema:identifier "PA1066" ;
+        schema:jobTitle "Agent général d'assurances"@fr ;
+        custom:experienceYears "4"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2008-12-01"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/33-8> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1068
+:PA1068 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "78"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "9"^^xsd:positiveInteger ;
+        schema:birthDate "1943-07-23"^^xsd:date ;
+        schema:email "jmdemange@assemblee-nationale.fr" ;
+        schema:familyName "Demange" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Marie" ;
+        schema:identifier "PA1068" ;
+        schema:jobTitle "Médecin"@fr ;
+        custom:experienceYears "6"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/57-9> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1079
+:PA1079 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1946-09-01"^^xsd:date ;
+        schema:email "ydeniaud@assemblee-nationale.fr" ;
+        schema:familyName "Deniaud" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Yves" ;
+        schema:identifier "PA1079" ;
+        schema:jobTitle "Cadre commercial"@fr ;
+        schema:url "www.yves-deniaud.org" ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/61-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1085
+:PA1085 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "76"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1945-06-06"^^xsd:date ;
+        schema:email "bdepierre@assemblee-nationale.fr" ;
+        schema:familyName "Depierre" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Bernard" ;
+        schema:identifier "PA1085" ;
+        schema:jobTitle "Consultant "@fr ;
+        schema:url "www.bernard-depierre.com" ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/21-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1088
+:PA1088 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "94"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1927-07-10"^^xsd:date ;
+        schema:email "ldeprez@assemblee-nationale.fr" ;
+        schema:familyName "Deprez" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Léonce" ;
+        schema:identifier "PA1088" ;
+        schema:jobTitle "Dirigeant d'entreprise"@fr ;
+        schema:url "www.leoncedeprezdepute.com/" ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/62-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1092
+:PA1092 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "81"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1939-11-10"^^xsd:date ;
+        schema:email "bderosier@assemblee-nationale.fr" ;
+        schema:familyName "Derosier" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Bernard" ;
+        schema:identifier "PA1092" ;
+        schema:jobTitle "Instituteur retraité"@fr ;
+        schema:url "www.bernard-derosier.blogspot.com" ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1094
+:PA1094 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:deputes-nappartenant-a-aucun-groupe ;
+        dbo:age "86"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1935-09-06"^^xsd:date ;
+        schema:email "jdesallangre@assemblee-nationale.fr" ;
+        schema:familyName "Desallangre" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jacques" ;
+        schema:identifier "PA1094" ;
+        schema:jobTitle "Journaliste"@fr ;
+        schema:url "www.jacques-desallangre.org/accueil.php" ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/2-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1098
+:PA1098 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "86"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1935-03-20"^^xsd:date ;
+        schema:email "jjdescamps@assemblee-nationale.fr" ;
+        schema:familyName "Descamps" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Jacques" ;
+        schema:identifier "PA1098" ;
+        schema:jobTitle "Directeur de société"@fr ;
+        schema:url "www.jj-descamps.com" ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/37-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1116
+:PA1116 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1946-09-02"^^xsd:date ;
+        schema:email "mdestot@assemblee-nationale.fr" ;
+        schema:familyName "Destot" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Michel" ;
+        schema:identifier "PA1116" ;
+        schema:jobTitle "Ingénieur"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.945"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.92"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/38-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1124
+:PA1124 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "77"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "13"^^xsd:positiveInteger ;
+        schema:birthDate "1944-08-26"^^xsd:date ;
+        schema:email "pdevedjian@assemblee-nationale.fr" ;
+        schema:familyName "Devedjian" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Patrick" ;
+        schema:identifier "PA1124" ;
+        schema:jobTitle "Avocat"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.771"^^xsd:float ;
+        custom:majorityScore "0.11"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.98"^^xsd:float ;
+        custom:startingDate "2012-12-17"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/92-13> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1132
+:PA1132 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "82"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1939-04-22"^^xsd:date ;
+        schema:familyName "Diébold" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean" ;
+        schema:identifier "PA1132" ;
+        schema:jobTitle "Ingénieur aérospatial"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/31-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1141
+:PA1141 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:gauche-democrate-et-republicaine ;
+        dbo:age "68"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "17"^^xsd:positiveInteger ;
+        schema:birthDate "1952-10-21"^^xsd:date ;
+        schema:email "mdolez@assemblee-nationale.fr" ;
+        schema:familyName "Dolez" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Marc" ;
+        schema:identifier "PA1141" ;
+        schema:jobTitle "Maître de conférences"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.939"^^xsd:float ;
+        custom:majorityScore "0.358"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.98"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-17> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1152
+:PA1152 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "62"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1959-09-01"^^xsd:date ;
+        schema:email "ddord@assemblee-nationale.fr" ;
+        schema:familyName "Dord" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Dominique" ;
+        schema:identifier "PA1152" ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.932"^^xsd:float ;
+        custom:majorityScore "0.099"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.89"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/73-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1154
+:PA1154 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "73"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1947-10-07"^^xsd:date ;
+        schema:familyName "Dosé" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "François" ;
+        schema:identifier "PA1154" ;
+        schema:jobTitle "Enseignant"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/55-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1155
+:PA1155 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "80"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1941-08-03"^^xsd:date ;
+        schema:email "rdosiere@assemblee-nationale.fr" ;
+        schema:familyName "Dosière" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "René" ;
+        schema:identifier "PA1155" ;
+        schema:jobTitle "Consultant international"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.962"^^xsd:float ;
+        custom:majorityScore "0.965"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.93"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/2-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1165
+:PA1165 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "66"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "10"^^xsd:positiveInteger ;
+        schema:birthDate "1955-03-05"^^xsd:date ;
+        schema:email "jdray@assemblee-nationale.fr" ;
+        schema:familyName "Dray" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Julien" ;
+        schema:identifier "PA1165" ;
+        schema:jobTitle "Enseignant chercheur"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/91-10> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1166
+:PA1166 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "82"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "5"^^xsd:positiveInteger ;
+        schema:birthDate "1939-01-09"^^xsd:date ;
+        schema:email "tdreyfus@assemblee-nationale.fr" ;
+        schema:familyName "Dreyfus" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Tony" ;
+        schema:identifier "PA1166" ;
+        schema:jobTitle "Avocat au Barreau de Paris"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/75-5> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1171
+:PA1171 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "70"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "5"^^xsd:positiveInteger ;
+        schema:birthDate "1950-12-06"^^xsd:date ;
+        schema:email "gdrut@assemblee-nationale.fr" ;
+        schema:familyName "Drut" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Guy" ;
+        schema:identifier "PA1171" ;
+        schema:jobTitle "Professeur d'éducation physique"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/77-5> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1174
+:PA1174 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "80"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1941-05-17"^^xsd:date ;
+        schema:email "jmdubernard@assemblee-nationale.fr" ;
+        schema:familyName "Dubernard" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Michel" ;
+        schema:identifier "PA1174" ;
+        schema:jobTitle "Chirurgien des Hôpitaux de Lyon et professeur des Universités"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/69-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1178
+:PA1178 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "83"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "9"^^xsd:positiveInteger ;
+        schema:birthDate "1938-07-09"^^xsd:date ;
+        schema:email "pdubourg@assemblee-nationale.fr" ;
+        schema:familyName "Dubourg" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Philippe" ;
+        schema:identifier "PA1178" ;
+        schema:jobTitle "Chirurgien dentiste"@fr ;
+        schema:url "www.philippe-dubourg.com/" ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/33-9> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1181
+:PA1181 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "78"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "7"^^xsd:positiveInteger ;
+        schema:birthDate "1942-12-12"^^xsd:date ;
+        schema:familyName "Ducout" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Pierre" ;
+        schema:identifier "PA1181" ;
+        schema:jobTitle "Ingénieur École Polytechnique - Direction Travaux Publics"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/33-7> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1182
+:PA1182 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "78"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1943-07-05"^^xsd:date ;
+        schema:email "jpdufau@assemblee-nationale.fr" ;
+        schema:familyName "Dufau" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Pierre" ;
+        schema:identifier "PA1182" ;
+        schema:jobTitle "Enseignant retraité"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.899"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.87"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/40-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1193
+:PA1193 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "79"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "5"^^xsd:positiveInteger ;
+        schema:birthDate "1942-01-23"^^xsd:date ;
+        schema:email "wdumas@assemblee-nationale.fr" ;
+        schema:familyName "Dumas" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "William" ;
+        schema:identifier "PA1193" ;
+        schema:jobTitle "Retraité"@fr ;
+        custom:experienceYears "13"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.967"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.94"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/30-5> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1198
+:PA1198 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialistes-et-apparentes ;
+        dbo:age "63"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1958-06-02"^^xsd:date ;
+        schema:email "laurence.dumont@assemblee-nationale.fr" ;
+        schema:familyName "Dumont" ;
+        schema:gender "féminin"@fr ;
+        schema:givenName "Laurence" ;
+        schema:identifier "PA1198" ;
+        schema:jobTitle "Chargée d'études"@fr ;
+        schema:url "https://facebook.com/LaurenceDumontDeputee" ,
+                   "https://twitter.com/LDumontDeputee" ;
+        custom:amendementsAdoptes 184 ;
+        custom:amendementsProposes 21 ;
+        custom:amendementsSignes 3749 ;
+        custom:commissionPresences 3 ;
+        custom:experienceYears "14"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 46 ;
+        custom:hemicycleInterventions_courtes 33 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.993"^^xsd:float ;
+        custom:majorityScore "0.239"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.11"^^xsd:float ;
+        custom:participationScoreSpeciality "0.46"^^xsd:float ;
+        custom:propositionsSignees 8 ;
+        custom:questionsEcrites 5 ;
+        custom:questionsOrales 3 ;
+        custom:semainesPresence 12 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/14-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1199
+:PA1199 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "77"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1944-04-06"^^xsd:date ;
+        schema:email "jldumont@assemblee-nationale.fr" ;
+        schema:familyName "Dumont" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Louis" ;
+        schema:identifier "PA1199" ;
+        schema:jobTitle "Enseignant"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.933"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.91"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/55-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1205
+:PA1205 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "88"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1933-06-19"^^xsd:date ;
+        schema:email "jpdupont@assemblee-nationale.fr" ;
+        schema:familyName "Dupont" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Pierre" ;
+        schema:identifier "PA1205" ;
+        schema:jobTitle "Docteur vétérinaire"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/19-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1206
+:PA1206 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:non-inscrit ;
+        dbo:age "60"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "8"^^xsd:positiveInteger ;
+        schema:birthDate "1961-03-07"^^xsd:date ;
+        schema:email "nicolas.dupont-aignan@assemblee-nationale.fr" ;
+        schema:familyName "Dupont-Aignan" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Nicolas" ;
+        schema:identifier "PA1206" ;
+        schema:jobTitle "Administrateur civil"@fr ;
+        schema:url "https://facebook.com/nicolasdupontaignan" ,
+                   "https://twitter.com/dupontaignan" ;
+        custom:amendementsProposes 39 ;
+        custom:amendementsSignes 44 ;
+        custom:commissionPresences 4 ;
+        custom:experienceYears "19"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 84 ;
+        custom:hemicycleInterventions_courtes 31 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.796"^^xsd:float ;
+        custom:majorityScore "0.075"^^xsd:float ;
+        custom:mandatesNumber "4"^^xsd:positiveInteger ;
+        custom:participationScore "0.07"^^xsd:float ;
+        custom:participationScoreSpeciality "0.26"^^xsd:float ;
+        custom:propositionsSignees 1 ;
+        custom:questionsEcrites 44 ;
+        custom:questionsOrales 1 ;
+        custom:semainesPresence 16 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/91-8> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1208
+:PA1208 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "77"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1944-02-05"^^xsd:date ;
+        schema:email "jpdupre@assemblee-nationale.fr" ;
+        schema:familyName "Dupré" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Paul" ;
+        schema:identifier "PA1208" ;
+        schema:jobTitle "Cadre bancaire retraité"@fr ;
+        schema:url "www.jean-paul-dupre.fr" ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.96"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.89"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/11-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1214
+:PA1214 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "11"^^xsd:positiveInteger ;
+        schema:birthDate "1946-06-06"^^xsd:date ;
+        schema:email "ydurand@assemblee-nationale.fr" ;
+        schema:familyName "Durand" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Yves" ;
+        schema:identifier "PA1214" ;
+        schema:jobTitle "Enseignant"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.995"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.94"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/59-11> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1221
+:PA1221 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "74"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1947-07-08"^^xsd:date ;
+        schema:email "pdurieu@assemblee-nationale.fr" ;
+        schema:familyName "Durieu" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Paul" ;
+        schema:identifier "PA1221" ;
+        schema:jobTitle "Retraité"@fr ;
+        custom:experienceYears "2"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2010-12-15"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/84-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1224
+:PA1224 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "73"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "11"^^xsd:positiveInteger ;
+        schema:birthDate "1948-05-07"^^xsd:date ;
+        schema:email "oduriez@assemblee-nationale.fr" ;
+        schema:familyName "Duriez" ;
+        schema:gender "féminin"@fr ;
+        schema:givenName "Odette" ;
+        schema:identifier "PA1224" ;
+        schema:jobTitle "Comptable"@fr ;
+        schema:url "duriez.canalblog.com" ;
+        custom:experienceYears "8"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/62-11> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1226
+:PA1226 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "74"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1947-06-19"^^xsd:date ;
+        schema:email "pduron@assemblee-nationale.fr" ;
+        schema:familyName "Duron" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Philippe" ;
+        schema:identifier "PA1226" ;
+        schema:jobTitle "Professeur de lycée agrégé d'histoire"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.977"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.94"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/14-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1236
+:PA1236 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "61"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1960-06-12"^^xsd:date ;
+        schema:email "rdutreil@assemblee-nationale.fr" ;
+        schema:familyName "Dutreil" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Renaud" ;
+        schema:identifier "PA1236" ;
+        schema:jobTitle "Maître des requêtes au conseil d'Etat"@fr ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/51-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1243
+:PA1243 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-republicain-et-citoyen ;
+        dbo:age "65"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1956-02-08"^^xsd:date ;
+        schema:email "ceckert@assemblee-nationale.fr" ;
+        schema:familyName "Eckert" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Christian" ;
+        schema:identifier "PA1243" ;
+        schema:jobTitle "Professeur"@fr ;
+        custom:experienceYears "7"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.97"^^xsd:float ;
+        custom:majorityScore "0.97"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.85"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/54-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1252
+:PA1252 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "76"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1945-05-31"^^xsd:date ;
+        schema:email "hemmanuelli@assemblee-nationale.fr" ;
+        schema:familyName "Emmanuelli" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Henri" ;
+        schema:identifier "PA1252" ;
+        schema:jobTitle "Directeur-adjoint de banque"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.823"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.93"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/40-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1263
+:PA1263 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "66"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "5"^^xsd:positiveInteger ;
+        schema:birthDate "1955-07-01"^^xsd:date ;
+        schema:email "cestrosi@assemblee-nationale.fr" ;
+        schema:familyName "Estrosi" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Christian" ;
+        schema:identifier "PA1263" ;
+        schema:jobTitle "Ancien sportif de haut niveau"@fr ;
+        schema:url "www.christian-estrosi.com" ;
+        custom:experienceYears "7"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.941"^^xsd:float ;
+        custom:majorityScore "0.103"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.89"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/6-5> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1266
+:PA1266 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "72"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "8"^^xsd:positiveInteger ;
+        schema:birthDate "1949-06-29"^^xsd:date ;
+        schema:email "cevin@assemblee-nationale.fr" ;
+        schema:familyName "Evin" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Claude" ;
+        schema:identifier "PA1266" ;
+        schema:jobTitle "Avocat"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/44-8> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1268
+:PA1268 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-republicain-et-citoyen ;
+        dbo:age "75"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1946-08-20"^^xsd:date ;
+        schema:email "lfabius@assemblee-nationale.fr" ;
+        schema:familyName "Fabius" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Laurent" ;
+        schema:identifier "PA1268" ;
+        schema:jobTitle "Ancien Maître des requêtes au Conseil d'Etat"@fr ;
+        schema:url "www.laurent-fabius.net" ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/76-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1271
+:PA1271 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "77"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "14"^^xsd:positiveInteger ;
+        schema:birthDate "1943-11-11"^^xsd:date ;
+        schema:email "afacon@assemblee-nationale.fr" ;
+        schema:familyName "Facon" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Albert" ;
+        schema:identifier "PA1271" ;
+        schema:jobTitle "Professeur"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/62-14> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1276
+:PA1276 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:mouvement-democrate-modem-et-democrates-apparentes ;
+        dbo:age "71"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1950-05-03"^^xsd:date ;
+        schema:email "michel.fanget@assemblee-nationale.fr" ;
+        schema:familyName "Fanget" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Michel" ;
+        schema:identifier "PA1276" ;
+        schema:jobTitle "Cardiologue"@fr ;
+        schema:url "https://facebook.com/Michel-Fanget-Député-428643654272212" ,
+                   "https://twitter.com/michelfanget" ;
+        custom:amendementsAdoptes 248 ;
+        custom:amendementsSignes 976 ;
+        custom:commissionPresences 22 ;
+        custom:experienceYears "4"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 7 ;
+        custom:hemicycleInterventions_courtes 1 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "1.0"^^xsd:float ;
+        custom:majorityScore "0.948"^^xsd:float ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:participationScore "0.05"^^xsd:float ;
+        custom:participationScoreSpeciality "0.44"^^xsd:float ;
+        custom:propositionsSignees 8 ;
+        custom:questionsEcrites 1 ;
+        custom:questionsOrales 1 ;
+        custom:semainesPresence 19 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/63-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1300
+:PA1300 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "79"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1942-08-31"^^xsd:date ;
+        schema:email "jmferrand@assemblee-nationale.fr" ;
+        schema:familyName "Ferrand" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Michel" ;
+        schema:identifier "PA1300" ;
+        schema:jobTitle "Professeur de lettres"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/84-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1304
+:PA1304 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "69"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "6"^^xsd:positiveInteger ;
+        schema:birthDate "1952-02-03"^^xsd:date ;
+        schema:email "aferry@assemblee-nationale.fr" ;
+        schema:familyName "Ferry" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Alain" ;
+        schema:identifier "PA1304" ;
+        schema:jobTitle "Chef d'entreprise"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/67-6> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1310
+:PA1310 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "67"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1954-03-04"^^xsd:date ;
+        schema:email "ffillon@assemblee-nationale.fr" ;
+        schema:familyName "Fillon" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "François" ;
+        schema:identifier "PA1310" ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.897"^^xsd:float ;
+        custom:majorityScore "0.108"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.96"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/75-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1317
+:PA1317 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste ;
+        dbo:age "83"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1938-02-28"^^xsd:date ;
+        schema:email "jfloch@assemblee-nationale.fr" ;
+        schema:familyName "Floch" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jacques" ;
+        schema:identifier "PA1317" ;
+        schema:jobTitle "Avocat"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:startingDate "2002-06-19"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/44-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1326
+:PA1326 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-radical-citoyen-et-divers-gauche ;
+        dbo:age "83"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1938-06-17"^^xsd:date ;
+        schema:email "pforgues@assemblee-nationale.fr" ;
+        schema:familyName "Forgues" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Pierre" ;
+        schema:identifier "PA1326" ;
+        schema:jobTitle "Professeur de mathématiques"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/65-1> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1327
+:PA1327 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:les-republicains ;
+        dbo:age "60"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "2"^^xsd:positiveInteger ;
+        schema:birthDate "1961-02-17"^^xsd:date ;
+        schema:email "nicolas.forissier@assemblee-nationale.fr" ;
+        schema:familyName "Forissier" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Nicolas" ;
+        schema:identifier "PA1327" ;
+        schema:jobTitle "Chef d'entreprise"@fr ;
+        schema:url "https://facebook.com/nicolas.forissier" ,
+                   "https://twitter.com/N_Forissier" ;
+        custom:amendementsAdoptes 31 ;
+        custom:amendementsProposes 42 ;
+        custom:amendementsSignes 1298 ;
+        custom:commissionPresences 4 ;
+        custom:experienceYears "9"^^xsd:positiveInteger ;
+        custom:hemicycleInterventions 10 ;
+        custom:hemicycleInterventions_courtes 8 ;
+        custom:isActive "true"^^xsd:boolean ;
+        custom:loyaltyScore "0.884"^^xsd:float ;
+        custom:majorityScore "0.397"^^xsd:float ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:participationScore "0.09"^^xsd:float ;
+        custom:participationScoreSpeciality "0.16"^^xsd:float ;
+        custom:propositionsSignees 6 ;
+        custom:questionsEcrites 30 ;
+        custom:questionsOrales 2 ;
+        custom:rapports 1 ;
+        custom:semainesPresence 13 ;
+        custom:startingDate "2017-06-21"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/36-2> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1341
+:PA1341 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "68"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "11"^^xsd:positiveInteger ;
+        schema:birthDate "1953-09-30"^^xsd:date ;
+        schema:email "jmfourgous@assemblee-nationale.fr" ;
+        schema:familyName "Fourgous" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Jean-Michel" ;
+        schema:identifier "PA1341" ;
+        schema:jobTitle "Chef d'entreprise"@fr ;
+        custom:experienceYears "10"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/78-11> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1353
+:PA1353 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "78"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "3"^^xsd:positiveInteger ;
+        schema:birthDate "1943-05-28"^^xsd:date ;
+        schema:email "mfrancaix@assemblee-nationale.fr" ;
+        schema:familyName "Françaix" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Michel" ;
+        schema:identifier "PA1353" ;
+        schema:jobTitle "Consultant en communication"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.92"^^xsd:float ;
+        custom:majorityScore "0.959"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.91"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/60-3> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1355
+:PA1355 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-pour-un-mouvement-populaire ;
+        dbo:age "70"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "6"^^xsd:positiveInteger ;
+        schema:birthDate "1951-02-09"^^xsd:date ;
+        schema:email "jceccaldi-raynaud@assemblee-nationale.fr" ;
+        schema:familyName "Ceccaldi-Raynaud" ;
+        schema:gender "féminin"@fr ;
+        schema:givenName "Joëlle" ;
+        schema:identifier "PA1355" ;
+        schema:jobTitle "Ancien clerc de notaire"@fr ;
+        custom:experienceYears "7"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:mandatesNumber "2"^^xsd:positiveInteger ;
+        custom:startingDate "2007-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/92-6> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1362
+:PA1362 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:socialiste-ecologiste-et-republicain ;
+        dbo:age "72"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1949-05-14"^^xsd:date ;
+        schema:email "cfranqueville@assemblee-nationale.fr" ;
+        schema:familyName "Franqueville" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Christian" ;
+        schema:identifier "PA1362" ;
+        schema:jobTitle "Attaché de direction"@fr ;
+        custom:experienceYears "5"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.963"^^xsd:float ;
+        custom:majorityScore "0.968"^^xsd:float ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:participationScore "0.94"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/88-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1364
+:PA1364 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:gauche-democrate-et-republicaine ;
+        dbo:age "74"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "4"^^xsd:positiveInteger ;
+        schema:birthDate "1947-02-25"^^xsd:date ;
+        schema:email "jfraysse@assemblee-nationale.fr" ;
+        schema:familyName "Fraysse" ;
+        schema:gender "féminin"@fr ;
+        schema:givenName "Jacqueline" ;
+        schema:identifier "PA1364" ;
+        schema:jobTitle "Médecin cardiologue"@fr ;
+        custom:experienceYears "15"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.963"^^xsd:float ;
+        custom:majorityScore "0.316"^^xsd:float ;
+        custom:mandatesNumber "3"^^xsd:positiveInteger ;
+        custom:participationScore "0.94"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/92-4> .
+
+
+###  https://fuseki.dolr.es/parliamentMember/PA1373
+:PA1373 rdf:type owl:NamedIndividual ,
+                 custom:ParliamentMember ;
+        schema:Organization organization:union-des-democrates-et-independants ;
+        dbo:age "69"^^xsd:positiveInteger ;
+        dbo:constituencyDistrict "1"^^xsd:positiveInteger ;
+        schema:birthDate "1952-01-04"^^xsd:date ;
+        schema:email "efritch@assemblee-nationale.fr" ;
+        schema:familyName "Fritch" ;
+        schema:gender "masculin"@fr ;
+        schema:givenName "Édouard" ;
+        schema:identifier "PA1373" ;
+        schema:jobTitle "Ingénieur de la ville de Paris"@fr ;
+        custom:experienceYears "2"^^xsd:positiveInteger ;
+        custom:isActive "false"^^xsd:boolean ;
+        custom:loyaltyScore "0.77"^^xsd:float ;
+        custom:majorityScore "0.213"^^xsd:float ;
+        custom:mandatesNumber "1"^^xsd:positiveInteger ;
+        custom:participationScore "0.81"^^xsd:float ;
+        custom:startingDate "2012-06-20"^^xsd:date ;
+        schema:AdministrativeArea <https://fuseki.dolr.es/administrativeArea/987-1> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
