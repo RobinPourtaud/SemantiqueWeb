@@ -5,7 +5,7 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT (?ethics_sub AS ?Idéologie) (?total_h+?total_f AS ?Total_des_députés) ((?total_f/(?total_h+?total_f))*100 AS ?Pourcentage_de_femmes) (?total_f AS ?Nombre_de_femmes) (?total_h AS ?Nombre_d_hommes)
 
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/organization>
 WHERE {
     {

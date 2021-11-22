@@ -5,21 +5,21 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 PREFIX custom_s:  <http://localhost/> 
 
 SELECT (?percentage_d AS ?Parité_députés) (?percentage_s AS ?Parité_sénateurs)
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/senateurs>
 WHERE  {
     {
         SELECT ((COUNT(distinct ?depute_f)*100)/?depute_t AS ?percentage_d)
         WHERE {
             ?depute_f schema:gender "féminin"@fr .
-            ?depute_f custom:isActive "1"^^xsd:boolean.
+            ?depute_f custom:isActive "true"^^xsd:boolean.
         
             # Nombre de députés total
             {
                 SELECT (COUNT(distinct ?depute) AS ?depute_t)
                 WHERE {
                     ?depute rdf:type custom:ParliamentMember .
-                    ?depute custom:isActive "1"^^xsd:boolean.
+                    ?depute custom:isActive "true"^^xsd:boolean.
                 }
             }
         }
@@ -35,6 +35,7 @@ WHERE  {
             {
                 SELECT (COUNT(distinct ?senateur) AS ?senateur_t)
                 WHERE {
+                    ?senateur custom_s:PCS ?pcs .
                     ?senateur custom_s:actif "true"^^xsd:boolean .
                 }
             }
@@ -43,4 +44,3 @@ WHERE  {
     }
 }
 GROUP BY ?percentage_d ?percentage_s
-

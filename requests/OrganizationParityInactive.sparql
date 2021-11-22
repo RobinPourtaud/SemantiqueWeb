@@ -5,7 +5,7 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT (?orga_name AS ?Nom_de_l_organisation) (?orga_date AS ?Date_de_création) (?depute_t AS ?Nombre_de_députés) (?percentage AS ?Pourcentage_de_femmes)
 
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/organization>
 WHERE {
     ?organization rdf:type schema:Organization .
@@ -18,7 +18,7 @@ WHERE {
         SELECT ?organization_sub ?depute_t ((COUNT(distinct ?depute_f)*100)/?depute_t AS ?percentage)
         WHERE {
             ?depute_f schema:gender "féminin"@fr .
-            ?depute_f custom:isActive "0"^^xsd:boolean.
+            ?depute_f custom:isActive "false"^^xsd:boolean.
             ?depute_f schema:Organization ?organization_sub .
         
             # Nombre de députés total
@@ -26,7 +26,7 @@ WHERE {
                 SELECT ?organization_sub (COUNT(distinct ?depute) AS ?depute_t)
                 WHERE {
                     ?depute rdf:type custom:ParliamentMember .
-                    ?depute custom:isActive "0"^^xsd:boolean.
+                    ?depute custom:isActive "false"^^xsd:boolean.
                     ?depute schema:Organization ?organization_sub .
                 }
                 GROUPBY ?organization_sub

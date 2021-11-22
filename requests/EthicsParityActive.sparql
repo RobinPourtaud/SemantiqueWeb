@@ -5,7 +5,7 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT (?ethics_sub AS ?Idéologie) (?total_h+?total_f AS ?Total_des_députés) ((?total_f/(?total_h+?total_f))*100 AS ?Pourcentage_de_femmes) (?total_f AS ?Nombre_de_femmes) (?total_h AS ?Nombre_d_hommes)
 
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/organization>
 WHERE {
     {
@@ -13,7 +13,7 @@ WHERE {
         SELECT ?ethics_sub (COUNT(distinct ?depute_f) AS ?total_f)
         WHERE {
             ?depute_f schema:gender "féminin"@fr .
-            ?depute_f custom:isActive "1"^^xsd:boolean.
+            ?depute_f custom:isActive "true"^^xsd:boolean.
             ?depute_f schema:Organization ?organization .
       		?organization schema:ethicsPolicy ?ethics_sub
         }
@@ -24,7 +24,7 @@ WHERE {
         SELECT ?ethics_sub (COUNT(distinct ?depute_h) AS ?total_h)
         WHERE {
             ?depute_h schema:gender "masculin"@fr .
-            ?depute_h custom:isActive "1"^^xsd:boolean.
+            ?depute_h custom:isActive "true"^^xsd:boolean.
             ?depute_h schema:Organization ?organization .
       		?organization schema:ethicsPolicy ?ethics_sub
         }

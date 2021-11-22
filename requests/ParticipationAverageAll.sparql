@@ -5,7 +5,7 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT (?orga_name as ?Nom_de_l_organisation) (?avgScore_f as ?Score_de_participation_moyen_femmes) (?avgScore_h as ?Score_de_participation_moyen_hommes)
 
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/organization>
 WHERE {
     ?organization rdf:type schema:Organization .

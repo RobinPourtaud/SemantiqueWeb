@@ -5,7 +5,7 @@ PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT (?orga_name as ?Nom_de_l_organisation) (?avgScore_f as ?Score_de_participation_moyen_femmes) (?avgScore_h as ?Score_de_participation_moyen_hommes)
 
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 FROM <http://fuseki.dolr.es/depute/data/organization>
 WHERE {
     ?organization rdf:type schema:Organization .
@@ -14,7 +14,7 @@ WHERE {
     {
     	SELECT ?organization_sub (AVG(?participation_f) as ?avgScore_f)
         WHERE {
-            ?depute_f custom:isActive "1"^^xsd:boolean.
+            ?depute_f custom:isActive "true"^^xsd:boolean.
       		?depute_f schema:gender "féminin"@fr .
             ?depute_f custom:participationScore ?participation_f .
             ?depute_f schema:Organization ?organization_sub .
@@ -24,7 +24,7 @@ WHERE {
     {
     	SELECT ?organization_sub (AVG(?participation_h) as ?avgScore_h)
         WHERE {
-            ?depute_h custom:isActive "1"^^xsd:boolean.
+            ?depute_h custom:isActive "true"^^xsd:boolean.
       		?depute_h schema:gender "masculin"@fr .
             ?depute_h custom:participationScore ?participation_h .
       		?depute_h schema:Organization ?organization_sub .

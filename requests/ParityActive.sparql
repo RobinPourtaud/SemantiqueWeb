@@ -4,14 +4,14 @@ PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 PREFIX custom: <https://fuseki.dolr.es/ontology/>
 
 SELECT ((COUNT(distinct ?depute_f)/?depute_t*100) AS ?Parité) (?depute_t AS ?Total)
-FROM <http://fuseki.dolr.es/depute/data/parliamentMember>
+FROM <http://fuseki.dolr.es/depute/data/parliamentMember2>
 WHERE {
   ?depute_f schema:gender "féminin"@fr .
-  ?depute_f custom:isActive "1"^^xsd:boolean.
+  ?depute_f custom:isActive "true"^^xsd:boolean.
   {
     SELECT ((COUNT(distinct ?depute)) AS ?depute_t)
     WHERE {
-  		?depute custom:isActive "1"^^xsd:boolean.
+  		?depute custom:isActive "true"^^xsd:boolean.
     }
   }
 }
