@@ -13,13 +13,13 @@ WHERE  {
       ?depute_f schema:familyName ?familyName .
       ?depute_f schema:gender "féminin"@fr .
       ?depute_f custom:isActive "true"^^xsd:boolean .
- 
-  	  ?senateur_f custom_s:PCS ?pcs .
+
+      ?senateur_f custom_s:PCS ?pcs .
       ?senateur_f schema:givenName ?givenName .
       ?senateur_f schema:familyName ?familyName .
- 	    ?senateur_f custom_s:actif "false"^^xsd:boolean .
-  
+      ?senateur_f custom_s:actif "false"^^xsd:boolean .
+
       ?depute_f schema:Organization ?organization .
       ?organization schema:name ?orga_name .
 }
-ORDER BY DESC(?active) ?familyName
+ORDER BY ?familyName
